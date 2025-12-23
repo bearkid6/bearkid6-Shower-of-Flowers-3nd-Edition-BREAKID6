@@ -1,0 +1,121 @@
+diplomatic_decisions = {
+	Chinese_Defence = {
+		potential = {
+			tag = CHI
+			has_country_flag = CHI_Passive_defense
+			not = { 
+				war_with = JAP
+				year = 1938
+				has_country_flag = Chinese_Defence
+				has_country_flag = Chinese_Counterattack
+			}
+		}
+		allow = {
+			or = {
+				chief_of_staff = 52035
+				chief_of_staff = 52045
+				chief_of_staff = 52092
+			}
+		}
+		effect = {
+			set_country_flag = Chinese_Defence
+			7467 = { land_fort = 1 }
+			7457 = { land_fort = 1 }
+			7447 = { land_fort = 1 }
+			5400 = { land_fort = 1 }
+			5385 = { land_fort = 1 }
+			5401 = { land_fort = 1 }
+			5417 = { land_fort = 1 }
+			5418 = { land_fort = 1 }
+			5435 = { land_fort = 1 }
+			5420 = { land_fort = 1 }
+			5421 = { land_fort = 1 }
+			5406 = { land_fort = 1 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Chinese_Counterattack = {
+		potential = {
+			tag = CHI
+			has_country_flag = CHI_Passive_defense
+			not = { 
+				war_with = JAP
+				year = 1938
+				has_country_flag = Chinese_Defence
+				has_country_flag = Chinese_Counterattack
+			}
+		}
+		allow = {
+			or = {
+				chief_of_staff = 52089
+				chief_of_staff = 52090
+			}
+		}
+		effect = {
+			set_country_flag = Chinese_Counterattack
+			any_country = { 
+				limit = { 
+					exists = CJC
+					TAG = CJC
+				} 
+				military_access = CHI
+			}
+			any_country = { 
+				limit = { 
+					exists = CSD
+					TAG = CSD
+				} 
+				military_access = CHI
+			}
+			any_country = { 
+				limit = { 
+					exists = CSX
+					TAG = CSX
+				} 
+				guarantee = CHI
+			}
+			any_country = { 
+				limit = { 
+					exists = CSY
+					TAG = CSY
+				} 
+				guarantee = CHI
+			}
+			any_country = { 
+				limit = { 
+					exists = CSC
+					TAG = CSC
+				} 
+				guarantee = CHI
+			}
+			any_country = { 
+				limit = { 
+					exists = CYN
+					TAG = CYN
+				} 
+				guarantee = CHI
+			}
+			any_country = { 
+				limit = { 
+					exists = CGX
+					TAG = CGX
+				} 
+				guarantee = CHI
+			}
+			any_country = { 
+				limit = { 
+					exists = CDB
+					TAG = CDB
+				} 
+				guarantee = CHI
+			}
+			JAP = { war = {	target = CHI attacker_goal = { casus_belli = china_war_goal } } }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}	

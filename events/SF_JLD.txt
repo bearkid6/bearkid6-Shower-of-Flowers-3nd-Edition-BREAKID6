@@ -1,0 +1,46 @@
+#####################
+#  将领牺牲事件组   #
+#####################
+country_event = {
+	id = 3220
+	title = "3220title"
+	desc = "3220decs"
+	picture = "Event3222283"
+	trigger = {
+		tag = CSX	
+                not = { has_country_flag = Event3220 }
+                JAP = { controls = 4977 }
+	}
+        mean_time_to_happen =  {
+	        month = 1
+        }
+	option = {
+		name = "3220option1"
+		set_country_flag = Event3220               
+		ai_chance = { factor = 0 }
+       	}
+	option = {
+		name = "3220option2"
+		set_country_flag = Event3220              
+                kill_leader = 503003
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 3222
+	title = "3222title"
+	desc = "3222decs"
+	picture = "Event3222283"
+	trigger = {
+		tag = CSX 
+		JAP = { controls = 5051 }
+                not = { has_global_flag = Event3222 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "唉"                                      
+		set_country_flag = Event3222
+	}
+}

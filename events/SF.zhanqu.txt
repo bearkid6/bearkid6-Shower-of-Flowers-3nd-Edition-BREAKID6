@@ -1,0 +1,81 @@
+country_event = {
+	id = 0007
+	is_triggered_only = yes
+	title = "diyizhanqu"
+	desc = "diyizhanqudesc"
+	picture = "disanzhanqu"
+	option = {
+		name = "成立"
+		load_oob = "CHI_SF_FT.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 0008
+	is_triggered_only = yes
+	title = "disanzhanqu"
+	desc = "disanzhanqudesc"
+	picture = "disanzhanqu"
+	option = {
+		name = "成立"
+		load_oob = "CHI_SF_ST.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 0006
+	is_triggered_only = yes
+	title = "成立第二战区"
+	desc = "成立第二战区，开赴晋绥。"
+	picture = "disanzhanqu"
+	option = {
+		name = "成立"
+		load_oob = "CHI_SF_CT.txt"
+		ai_chance = { factor = 100 }
+               remove_brigade = "32军司令部"
+	      remove_brigade = "太原指挥部"
+	      remove_brigade = "第196旅"
+	      remove_brigade = "第211旅"
+	      remove_brigade = "第67师"
+	      remove_brigade = "第33军司令部" 
+              remove_brigade = "第200旅"
+	      remove_brigade = "第218旅" 
+              remove_brigade = "第203旅"
+	      remove_brigade = "第209旅"
+	      remove_brigade = "第34军司令部" 
+	      remove_brigade = "第202旅" 
+	      remove_brigade = "第214旅" 
+	      remove_brigade = "第201旅" 
+	      remove_brigade = "第213旅"
+	      remove_brigade = "独立第1旅"
+              remove_brigade = "新编第1师" 
+              remove_brigade = "独立第2旅" 
+              remove_brigade = "独立第3旅" 
+              remove_brigade = "独立第7旅" 
+              remove_brigade = "独立第8旅"
+	}
+}
+country_event = {
+	id = 0009
+	is_triggered_only = yes
+	title = "diwuzhanqu"
+	desc = "diwuzhanqudesc"
+	picture = "disanzhanqu"
+	option = {
+		name = "成立"
+		load_oob = "CHI_SF_3T.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 00010
+	is_triggered_only = yes
+	title = "12A"
+	desc = "12Adesc"
+	picture = "disanzhanqu"
+	option = {
+		name = "成立"
+		load_oob = "12A.txt"
+		ai_chance = { factor = 100 }
+	}
+}

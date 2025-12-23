@@ -1,0 +1,80 @@
+#组建第21集团军
+country_event = {
+          id = 300000
+          is_triggered_only = yes
+          title = "组建"
+          desc = "组建第21集团军北上抗日，共同御寇"
+          picture = "news_paper"
+          option = {
+           name = "北上抗日"
+              national_unity = 5
+              CHI = { country_event = 301 }
+              remove_brigade = "第508旅第1015团"
+	      remove_brigade = "第508旅第1016团"
+	      remove_brigade = "第510旅第1019团"
+	      remove_brigade = "第510旅第1020团"
+	      remove_brigade = "第511旅第1021团"
+	      remove_brigade = "第511旅第1022团" 
+              remove_brigade = "第513旅第1025团"
+	      remove_brigade = "第513旅第1026团" 
+              remove_brigade = "第514旅第1037团"
+	      remove_brigade = "第514旅第1038团"
+	      remove_brigade = "第516旅第1031团" 
+	      remove_brigade = "第516旅第1032团" 
+	      remove_brigade = "第510旅第1027团" 
+	      remove_brigade = "第510旅第1028团" 
+	      remove_brigade = "第517旅第1033团"
+	      remove_brigade = "第517旅第1034团"
+              remove_brigade = "第520旅第1039团" 
+              remove_brigade = "第520旅第1040团" 
+              remove_brigade = "第522旅第1043团" 
+              remove_brigade = "第522旅第1044团" 
+              remove_brigade = "第526旅第1051团"
+              remove_brigade = "第526旅第1052团"  
+              remove_brigade = "第528旅第1055团"  
+              remove_brigade = "第528旅第1056团"
+              remove_brigade = "第1050团"
+              remove_brigade = "第1051团"
+              remove_brigade = "第1052团" 
+              remove_brigade = "第五路军司令部" 
+              remove_brigade = "第7军司令部"
+              remove_brigade = "第48军司令部" 
+         }
+}
+#组建第11、16集团军
+country_event = {
+          id = 3000001
+          is_triggered_only = yes
+          title = "组建"
+          desc = "组建第11、16集团军北上抗日，共同御寇"
+          picture = "news_paper"
+          option = {
+           name = "北上抗日"
+              national_unity = 5
+              CHI = {country_event = 302 }
+         }
+}  
+country_event = {
+          id = 301
+          is_triggered_only = yes
+          title = "接受部队"
+          desc = "接受桂系21集团军，北上抗日，共同御侮。"
+          picture = "news_paper"
+          option = {
+           name = "北上抗日"
+              national_unity = 5
+              load_oob = "CGX_guixi_zhengb1.txt"
+         }
+}
+country_event = {
+          id = 302
+          is_triggered_only = yes
+          title = "接受部队"
+          desc = "接受桂系11、16集团军，北上抗日，共同御侮。"
+          picture = "news_paper"
+          option = {
+           name = "北上抗日"
+              national_unity = 5
+              load_oob = "CGX_guixi_zhengb2.txt"
+         }
+}    

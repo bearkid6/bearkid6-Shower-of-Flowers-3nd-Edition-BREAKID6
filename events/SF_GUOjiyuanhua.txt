@@ -1,0 +1,397 @@
+
+######################
+#   国际援华事件组   #
+######################
+#是否援华
+country_event = {
+          id = 2000073
+          trigger = {
+		tag = SOV
+		CHI ={ war_with = JAP } 
+                date = 1937.9.1
+                not = { has_global_flag = Event2000073
+			has_global_flag = error10000 }
+                has_country_flag = ZSHBQFTYUE
+          }
+          title = "是否援华"
+          desc = "SOV_Event_decs2000073"
+          picture = "CHC_Event_2000075"
+          option = {
+		name = "援助"
+		set_global_flag = Event2000073
+		supplies = -1000
+		dissent = -10
+		CHI = { country_event = 2000075 }
+           ai_chance = { factor = 100 }
+         }
+	 option = {
+		name = "让黄种人自己打自己吧"
+           	set_global_flag = error10000
+                national_unity = -5
+                dissent = 50
+		ai_chance = { factor = 0 }
+	}
+}
+#苏联援华（萨雷奥泽克--霍尔果斯--迪化--兰州路线）
+country_event= {
+	id = 2000075
+	is_triggered_only = yes
+	title = "他们终于同意了"
+	desc = "CHI_Event_decs2000075"
+	picture = "CHC_Event_2000075"
+	option = {
+		name = "中国万岁"          
+		supplies = 1000
+		metal = 10
+		energy = 10
+		rare_materials = 10
+		crude_oil = 10
+		national_unity = 5
+	}
+}
+#得到苏联援华补给
+country_event = {
+	id = 2000076
+	trigger = {
+		tag = CHI
+                exists = CHI
+		war_with = JAP  
+		has_global_flag = Event2000073
+		not = { year = 1941 }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	title = "收到补给"
+	desc = "苏联给我们的补给到了"
+	picture = "news_paper"
+	option = {
+		name = "马上投入战场" 
+		supplies = 150
+		fuel = 10
+	}
+}
+#滇越铁路
+country_event = {
+          id = 2000077
+          trigger = {
+		tag = CHI
+                exists = CHI
+		war_with = JAP
+                date = 1937.9.1
+                not = { has_country_flag = Event2000077
+			has_country_flag = error10002 }
+                not = { has_global_flag = JAPsouthing }
+          }
+
+          title = "是否接受滇越铁路的补给"
+          desc = "CHI_Event_decs2000077"
+         picture = "CHC_Event_2000075"
+
+         option = {
+           name = "接受"
+           set_country_flag = Event2000077
+           supplies = 1000
+           dissent = -10
+           ai_chance = { factor = 100 }
+         }
+	 option = {
+		name = "我们自己能打赢抗战"
+                national_unity = -5
+                dissent = 5
+                set_country_flag = error10002
+		ai_chance = { factor = 0 }
+	}
+}
+#收到补给
+country_event = {
+          id = 2000078
+          trigger ={
+               tag = CHI
+               exists = CHI
+               war_with = JAP 
+               has_country_flag = Event2000077
+               not = { has_global_flag = JAPsouthing } 
+          }
+          mean_time_to_happen = {
+                  months = 1
+          }
+          title = "得到补给"
+          desc = "国际给我们的补给到了"
+          picture = "news_paper"
+          option = {
+           name = "马上投入战场"              
+              supplies = 150
+              fuel = 50 
+           
+         }
+}
+#开通滇缅公路
+country_event = {
+	id = 2000079
+	trigger = {
+		tag = CHI
+		exists = CHI
+		war_with = JAP
+		ENG = { controls = 6070 }
+		not = { has_global_flag = Event2000079 }
+		date = 1938.8.20
+	}
+	
+	title = "国民政府开通滇缅公路"
+	desc = "CHI_Event_decs2000079"
+	picture = "CHC_Event_2000075"
+	option = {
+		name = "中国万岁！中国不会亡！"
+		set_global_flag = Event2000079
+		supplies = 1000
+		national_unity = 5
+	}
+}			
+#得到补给
+country_event = {
+          id = 2000080
+          trigger = {
+               tag = CHI
+               exists = CHI
+               war_with = JAP 
+               has_global_flag = Event2000079 
+               not = { has_global_flag = Event2000081 }
+               ENG = { controls = 6070 }
+          }
+
+          mean_time_to_happen = {
+                  months = 1
+          }
+
+          title = "得到补给"
+          desc = "国际给我们的补给到了"
+          picture = "news_paper"
+
+          option = {
+           name = "马上投入战场"              
+              supplies = 250
+              fuel = 50 
+           
+         }
+}
+#关闭滇缅公路
+country_event = {
+          id = 2000081
+          major = yes
+          trigger = {
+               tag = ENG
+               CHI ={ war_with = JAP }  
+               ENG = { controls = 6070 }
+               exists = CHI
+               date= 1940.7.18
+	       has_global_flag = Event2000079
+               not = { has_global_flag = Event2000081
+		       has_global_flag = error10003 }
+          }
+          title = "关闭滇缅公路"
+          desc = "ENG_Event_decs2000081"
+          picture = "news_paper"
+          option = {
+           name = "这样做是理智的"
+              national_unity = -5
+              dissent = 5 
+              set_global_flag = Event2000081
+              CHI = { country_event = 2000083 }
+              ai_chance = { factor = 100 }
+          }
+          option = {
+           name = "帝国不会向日本妥协"
+              national_unity = 5
+              dissent = -5
+              relation = { who = JAP value = -50 }
+              set_global_flag = error10003
+              ai_chance = { factor = 0 }
+         }
+}               
+#重新开放滇缅公路
+country_event = {
+          id = 2000082
+          trigger = {
+               tag = ENG
+               CHI ={ war_with = JAP }  
+               ENG = { controls = 6070 }
+               exists = CHI
+               has_global_flag = Event2000081
+               not = { has_global_flag = Event2000082
+		       has_global_flag = error10004 }
+               date= 1940.10.18
+          }
+
+          title = "重新开放滇缅公路"
+          desc = "ENG_Event_decs2000082"
+          picture = "news_paper"
+          option = {
+           name = "维持现状"
+              national_unity = -5
+              dissent = 5 
+              set_global_flag = Event2000082
+              ai_chance = { factor = 0 }
+          }
+          option = {
+           name = "开放"
+              national_unity = 5
+              dissent = -5
+              relation = { who = JAP value = -50 }
+              set_global_flag = error10004
+              CHI = { country_event = 2000084 }
+              ai_chance = { factor = 100 }
+         }
+}               
+#英国方面关闭滇缅公路
+country_event = {
+          id = 2000083
+          is_triggered_only = yes
+          title = "滇缅公路被迫关闭"
+          desc = "CHI_Event_decs2000083"
+          picture = "news_paper"
+          option = {
+           name = "纵使没有援助，我们仍誓死抗战到底"
+              national_unity = 5
+         }
+}               
+#英国方面重新开放滇缅公路
+country_event = {
+          id = 2000084
+          is_triggered_only = yes
+          title = "英国方面重新开放滇缅公路"
+          desc = "CHI_Event_decs2000084"
+          picture = "news_paper"
+          option = {
+           name = "国际不会放弃我们"
+              national_unity = 5    
+         }
+}               
+#得到补给
+country_event = {
+          id = 2000085
+          trigger = {
+               tag = CHI
+               exists = CHI
+               war_with = JAP 
+               has_global_flag = error10004
+               not = { has_global_flag = JAPsouthing }
+               ENG = { controls = 6070 }
+          }
+
+          mean_time_to_happen = {
+                  months = 1
+          }
+
+          title = "得到补给"
+          desc = "国际给我们的补给到了"
+          picture = "news_paper"
+          option = {
+           name = "马上投入战场"              
+              supplies = 250
+              fuel = 50 
+           
+         }
+}
+#仰光沦陷 
+country_event={
+          id = 2000086
+          tirgger = {
+               tag = ENG
+               war_with = JAP  
+               not = { has_country_flag = Event2000086 }
+               JAP = { controls = 6070 }
+          }
+          mean_time_to_happen = {
+                  days = 1
+          }
+          title="仰光沦陷"
+          desc="ENG_Event_decs2000086"
+          picture="news_paper"
+          option={
+           name="卑鄙的日本人"              
+              national_unity = 5
+              dissent = 5
+              sat_country_flag = Event2000086 
+              relation = { who = JAP value = -100 }
+           
+         }
+}            
+#开通驼峰航线
+country_enent = {
+          id = 2000087
+          trigger = {
+		tag = CHI
+                exists = CHI
+		war_with = jAP 
+                JAP = { controls = 6070 }
+                not = { has_country_flag = Event2000087 }
+                has_global_flag = JAPsouthing 
+                date = 1943.8.20
+          }
+          mean_time_to_happen = {
+                  days = 1
+          }
+          title = "开通驼峰航线"
+          desc = "CHI_Event_decs2000087"
+         picture = "CHC_Event_1000075"
+         option={
+           name="中国万岁！中国不会亡！"
+           set_global_flag = Event1000087
+           supplies = 1000
+           national_unity = 5
+         } 
+}
+#开通中印公路
+country_enent={
+          id=2000088
+          trigger = {
+		tag = CHI
+                exists = CHI
+		war_with = jAP 
+                JAP = { controls = 6070 }
+                not = { has_country_flag = Event2000088 }
+                has_country_flag = Event1200001
+                has_global_flag = JAPsouthing 
+                has_global_flag = Event1000087
+                date = 1943.8.20
+          }
+          mean_time_to_happen = {
+                  days = 1
+          }
+          title="开通中印公路"
+          desc = "CHI_Event_decs2000088"
+         picture = "CHC_Event_1000075"
+         option = {
+           name = "中国万岁！中国不会亡！"
+           set_global_flag = Event1000088
+           supplies = 1000
+           national_unity = 5
+         } 
+}
+#得到补给
+country_enent = {
+          id = 1000089
+          trigger = {
+		tag = CHI
+                exists = CHI
+		war_with = jAP 
+                has_global_flag = JAPsouthing 
+                has_global_flag = Event1000087
+                has_country_flag = Event1000088
+          }
+          mean_time_to_happen = {
+                  months = 1
+          }
+          title = "得到补给"
+          desc = "CHI_Event_decs1000089"
+         picture = "CHC_Event_1000075"
+         option = {
+           name = "中国万岁！中国不会亡！"
+           supplies = 100
+           national_unity = 5
+         } 
+}          
+
+

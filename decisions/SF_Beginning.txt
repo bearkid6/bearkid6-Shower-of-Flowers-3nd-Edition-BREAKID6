@@ -1,0 +1,60 @@
+############
+# ¿ª¾Ö½éÉÜ #
+############
+
+diplomatic_decisions = {
+	introduction_chc = {
+		potential = {
+			tag = CHC
+			year = 1936
+			not = { has_country_flag = introduction_chc_1936 } 
+			not = { year = 1937 } 
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = introduction_chc_1936
+			country_event = 1000001
+			manpower = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	introduction_chi = {
+		potential = {
+			tag = CHI
+			year = 1936
+			not = { has_country_flag = introduction_chi_1936 } 
+			not = { year = 1937 } 
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = introduction_chi_1936
+			country_event = 1000002
+			manpower = 1500
+			CDB = { manpower = 300 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	introduction_jap = {
+		potential = {
+			tag = JAP
+			year = 1936
+			not = { has_country_flag = introduction_jap_1936 } 
+			not = { year = 1937 } 
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = introduction_jap_1936
+			country_event = 1000003
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

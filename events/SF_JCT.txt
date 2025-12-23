@@ -1,0 +1,266 @@
+#####################
+#  中日谈判事件组   #
+#####################
+country_event = {
+	id = 321001
+	title = "0001title"
+	desc = "0001decs"
+	picture = "Event3000083"
+	trigger = {
+		tag = GER
+		date = 1937.11.1
+                not = { has_country_flag = Event0001 }
+                has_global_flag = Event0004
+                CHI = { controls = 5494 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "0001option1"
+		set_country_flag = Event0001
+		CHI = { country_event = 32100002 }
+                JAP = { country_event = 32100003 }
+		ai_chance = { factor = 100 }
+       	}
+	option = {
+		name = "0001option2"
+		set_country_flag = Event0001
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 321004
+	title = "0004title"
+	desc = "0004decs"
+	picture = "Event3000083"
+	trigger = {
+		tag =JAP
+		date = 1937.7.29
+                not = { has_country_flag = Event0004 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "0004option1"
+                relation = { who = GER value = -50 }
+		set_country_flag = Event0004
+		ai_chance = { factor = 100 }
+       	}
+	option = {
+		name = "0004option2"
+                GER = { country_event = 0005 }
+		set_country_flag = Event0004
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+          id = 321005
+          is_triggered_only = yes
+          title = "0005title"
+          desc = "0005decs"
+          picture = "news_paper"
+          option = {
+          name = "0005option1"
+          CHI = { country_event = 3210006 }
+          JAP = { country_event = 3210008 }  
+          }
+          option = {
+          name = "0005option2"
+          CHI = { country_event = 3210007 }
+          JAP = { country_event = 3210009 }         
+         }
+} 
+country_event = {
+          id = 321006
+          is_triggered_only = yes
+          title = "0006title"
+          desc = "0006decs"
+          picture = "news_paper"
+          option = {
+          name = "0006option"
+          load_oob = "GER.TXT" 
+          relation = { who = GER value = 50 }        
+         }
+}  
+country_event = {
+          id = 321008
+          is_triggered_only = yes
+          title = "0007title"
+          desc = "0007decs"
+          picture = "news_paper"
+          option = {
+          name = "0007option"
+          relation = { who = GER value = -100 }       
+         }
+}  
+country_event = {
+          id = 321007
+          is_triggered_only = yes
+          title = "0007title"
+          desc = "0007decs"
+          picture = "news_paper"
+          option = {
+          name = "0007option"
+          national_unity = 5       
+         }
+}  
+country_event = {
+          id = 321009
+          is_triggered_only = yes
+          title = "0009title"
+          desc = "0009decs"
+          picture = "news_paper"
+          option = {
+          name = "0009option"      
+         }
+}
+country_event = {
+          id = 3210002
+          is_triggered_only = yes
+          title = "00002title"
+          desc = "00002decs"
+          picture = "news_paper"
+          option = {
+          name = "00002option"      
+         }
+} 
+country_event = {
+          id = 3210003
+          is_triggered_only = yes
+          title = "00003title"
+          desc = "00003decs"
+          picture = "news_paper"
+          option = {
+          name = "00003option" 
+          CHI = { country_event = 32100004 }     
+         }
+} 
+country_event = {
+          id = 3210004
+          is_triggered_only = yes
+          title = "00004title"
+          desc = "00004decs"
+          picture = "news_paper"
+          option = {
+          name = "00004option" 
+           add_country_modifier = {
+			name = "Event00004_modifier"
+			duration = 3650
+          }
+          leave_alliance = CHC
+          leave_alliance = CGX
+          leave_alliance = CYN
+          leave_alliance = CSC
+          leave_alliance = CSY
+          leave_alliance = CXK
+          remove_minister = 52002
+          head_of_state = 52025
+          CHI = { country_event = 00005 }
+          JAP= { country_event = 00006 }  
+          end_war = JAP
+          CHI = { east_hebei_region = { secede_province = JAP } }
+          CHI = { 4979 = { secede_province = JAP } }
+          CHI = { jiangsu_region = { secede_province = JAP } } 
+          CHI = { 5494 = { secede_province = JAP } }
+          CHI = { shandong_region = { secede_province = JAP } } 
+          } 
+          option = {
+          name = "00004option2" 
+          national_unity = 15
+          JAP= { country_event = 321000010 }    
+         }
+} 
+country_event = {
+          id = 3210005
+          is_triggered_only = yes
+          title = "00005title"
+          desc = "00005decs"
+          picture = "news_paper"
+          option = {
+          name = "00005option" 
+          JAP = { country_event = 32100006 }  
+         }
+} 
+country_event = {
+          id = 3210006
+          is_triggered_only = yes
+          title = "00006title"
+          desc = "00006decs"
+          picture = "news_paper"
+          option = {
+           name = "00006option" 
+           add_country_modifier = {
+			name = "Event00004_modifier"
+			duration = 365
+          }
+          CHC = { country_event = 32100008 }
+         }
+} 
+country_event = {
+          id = 3210008
+          is_triggered_only = yes
+          title = "00008title"
+          desc = "00008decs"
+          picture = "news_paper"
+          option = {
+          name = "00008option" 
+          national_unity = 10
+          war = { target = CHI }
+          CHI = { country_event = 321000011 } 
+          }
+          option = {
+          name = "00008option" 
+          national_unity = -100
+          dissent = 50
+         JAP = { country_event = 32100009 } 
+         }
+} 
+country_event = {
+	id = 3210007
+	is_triggered_only = yes
+	title = "Event00007title"
+	desc = "Event00007desc"
+	picture = "CXB_Flag"
+	option = {
+		name = "Event00007option"
+		ai_chance = { factor = 100 }
+		CHI = { any_owned = { limit = { province_id = 9170 } secede_province = CLZ }}
+		SF_china_region = { add_core = CLZ }
+	}
+}  
+country_event = {
+          id = 3210009
+          is_triggered_only = yes
+          title = "00009title"
+          desc = "00009decs"
+          picture = "news_paper"
+          option = {
+          name = "00009option" 
+          national_unity = 10
+         }
+}   
+country_event = {
+          id = 32100011
+          is_triggered_only = yes
+          title = "000011title"
+          desc = "000011decs"
+          picture = "news_paper"
+          option = {
+          name = "000011option" 
+          join_faction = axis
+          national_unity = -50
+         }
+} 
+country_event = {
+          id = 32100010
+          is_triggered_only = yes
+          title = "000010title"
+          desc = "00010decs"
+          picture = "news_paper"
+          option = {
+          name = "000010option" 
+          national_unity = 10
+         }
+}                   

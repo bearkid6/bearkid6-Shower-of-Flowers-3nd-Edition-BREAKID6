@@ -1,0 +1,45 @@
+######################
+#   日本集群议决组   #
+######################
+#华北方面军
+diplomatic_decisions = {
+	     JAP_HBamry = {
+		potential = {
+			tag = JAP
+                        exists = CHI
+			war_with = CHI
+			not = { has_global_flag = JAPHUABEIFMJ } 
+			date = 1937.8.31
+			not = { year = 1939 } 
+		}
+		allow = {
+			JAP = { controls = 4979 }
+		}
+		effect = {
+			set_global_flag = JAPHUABEIFMJ
+			country_event = 300110
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#华中方面军
+diplomatic_decisions = {
+	     JAP_HZamry = {
+		potential = {
+			tag = JAP
+			not = { has_global_flag = JAPHUABEIFMJ } 
+			date = 1938.1.1
+			not = { year = 1939 } 
+		}
+		allow = {
+			JAP = { controls = 5494 }
+		}
+		effect = {
+			set_global_flag = JAPHUABEIFMJ
+			country_event = 300111
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}

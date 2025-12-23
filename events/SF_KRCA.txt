@@ -1,0 +1,99 @@
+#####################
+#  抗日惨案事件组   #
+#####################
+country_event = {
+	id = 2221
+	title = "2221title"
+	desc = "2221decs"
+	picture = "Event3222283"
+	trigger = {
+		tag = GER
+		date = 1938.11.13
+                not = { has_country_flag = Event2221 }
+                has_global_flag = Event2224
+                CHI = { controls = 5494 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "2221option1"
+                 add_country_modifier = {
+			name = "Event2221_modifier"
+			duration = 120
+		}
+		set_country_flag = Event2221
+		CHI = { country_event = 22222 }
+                CGX = { country_event = 22223 }
+                CYN = { country_event = 22223 }
+                CSY = { country_event = 22223 }
+                CHC = { country_event = 22223 }
+		ai_chance = { factor = 100 }
+       	}
+	option = {
+		name = "2221option2"
+		set_country_flag = Event2221
+                country_event = 22222 
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 2224
+	title = "2224title"
+	desc = "2224decs"
+	picture = "Event3222283"
+	trigger = {
+		tag = CHI
+                controls = 5383 
+		JAP = { controls = 5419 }
+                not = { has_country_flag = Event2224 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "2224option1"
+                5432 = { infra = -3 } 
+                5417 = { infra = -3 }
+                5432 = { infra = -3 }
+                5448 = { infra = -3 }
+                5468 = { infra = -3 }
+                5433 = { infra = -3 }
+                5432 = { infra = -3 }
+                5469 = { infra = -4 }
+                5492 = { infra = -4 }
+                5537 = { infra = -3 }
+                5450 = { infra = -2 }
+                5470 = { infra = -2 }
+                5436 = { infra = -2 }
+                5420 = { infra = -1 }
+                5421 = { infra = -2 }
+                5405 = { infra = -1 } 
+                CHI = { country_event = 22222 }
+                CGX = { country_event = 22222 }
+                CYN = { country_event = 22222 }
+                CSY = { country_event = 22222 }
+                CHC = { country_event = 22222 }                                         
+		set_country_flag = Event2224
+	}
+}
+country_event = {
+          id = 22222
+          is_triggered_only = yes
+          title = "国民党当局掘开花园口大堤"
+          desc = "2224decs"
+          picture = "news_paper"
+          option = {
+          name = "不值得"       
+         }
+} 
+country_event = {
+          id = 22223
+          is_triggered_only = yes
+          title = "22223title"
+          desc = "22222decs"
+          picture = "news_paper"
+          option = {
+          name = "不值得"        
+         }
+} 

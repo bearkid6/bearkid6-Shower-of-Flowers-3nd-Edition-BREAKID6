@@ -1,0 +1,306 @@
+######################
+#   1936新闻事件组   #
+######################
+#平津学生组成南下抗日宣传团
+country_event = {
+	id = 19361
+	major = yes
+	title = "Event19361title"
+	subtitle = "Event19361subtitle"
+	desc = "Event19361desc"
+	picture = "Event19361"
+	trigger = {
+		tag = CHI
+		not = { war_with = JAP }
+		not = { has_country_flag = Event19361 }
+		date = 1936.1.2
+	}
+	option = {
+		name = "扣押他们"
+                add_country_modifier = {
+			name = "Event19361_modifier"
+			duration = 506
+		}
+		set_country_flag = Event19361
+                ai_chance = { factor = 100 }
+	}
+	option = {
+		name = "支持他们"
+		set_country_flag = Event19361
+		dissent = -5
+		national_unity = 10
+                ai_chance = { factor = 0 }
+	}
+}
+#发布《关于红军东进抗日及讨伐卖国贼阎锡山的命令》
+country_event = {
+	id = 19362
+	major = yes
+	title = "Event19362title"
+	subtitle = "Event19362subtitle"
+	desc = "Event19362desc"
+	picture = "Event19362"
+	trigger = {
+		tag = CHC
+	        war_with = JAP 
+		not = { has_country_flag = Event19362 }
+		date = 1936.1.15
+	}
+	option = {
+		name = "组建抗日先锋军"
+                country_event = 193601
+                national_unity = 10
+		set_country_flag = Event19362
+	}
+}
+#组建抗日先锋军
+country_event = {
+	id = 193601
+	is_triggered_only = yes
+	title = "dz1title"
+	desc = "dz1decs"
+	picture = "CHC_Event_1000023"
+	option = {
+		name = "组建"
+                load_oob = "krxfa_chc.txt"
+                remove_brigade = "红1方面军指挥部"
+	        remove_brigade = "陕甘支队指挥部"
+	        remove_brigade = "第1纵队第1大队"
+	        remove_brigade = "第1纵队第2大队"
+	        remove_brigade = "第1纵队第3大队"
+	        remove_brigade = "第1纵队第4大队" 
+                remove_brigade = "第2纵队第1大队"
+	        remove_brigade = "第2纵队第2大队" 
+                remove_brigade = "第2纵队第3大队"
+	        remove_brigade = "第3纵队第1大队"
+	        remove_brigade = "第3纵队第2大队" 
+	        remove_brigade = "第3纵队第3大队" 
+ 	        remove_brigade = "第223团" 
+                remove_brigade = "红15军团指挥部"
+	        remove_brigade = "陕甘支队指挥部"
+	        remove_brigade = "第232团"
+	        remove_brigade = "第225团"
+	        remove_brigade = "骑兵团"
+	        remove_brigade = "第241团" 
+                remove_brigade = "第234团"
+	        remove_brigade = "第241团" 
+                remove_brigade = "第243团"
+	        remove_brigade = "第250团"
+	        remove_brigade = "第251团" 
+	        remove_brigade = "第257团"   
+	}
+}
+#毛泽东填词《沁园春·雪》
+country_event = {
+	id = 19363
+	major = yes
+	title = "Event19363title"
+	subtitle = "Event19363subtitle"
+	desc = "Event19363desc"
+	picture = "Event19362"
+	trigger = {
+		tag = CHC
+	        war_with = JAP 
+		not = { has_country_flag = Event19363 }
+		date = 1936.2.1
+	}
+	option = {
+		name = "精彩"
+                national_unity = 1
+                dissent = -5
+		set_country_flag = Event19363
+	}
+}
+#加米施-帕滕基兴冬季奥运会在德国加米施-帕腾基兴举行
+country_event = {
+	id = 19364
+	major = yes
+	title = "Event19364title"
+	desc = "Event19364desc"
+	picture = "Event19362"
+	trigger = {
+		tag = GER	         
+		not = { has_country_flag = Event19364 }
+		date = 1936.2.6
+	}
+	option = {
+		name = "精彩"
+                national_unity = 10
+                dissent = -5
+		set_country_flag = Event19364
+	}
+}
+#宪兵学校建校
+country_event = {
+	id = 19365
+	major = yes
+	title = "Event19365title"	
+	desc = "Event19365desc"
+	picture = "Event19362"
+	trigger = {
+		tag = CHI
+		not = { has_country_flag = Event19365 }
+		date = 1936.2.1
+	}
+	option = {
+		name = "国之利剑"
+                add_country_modifier = {
+			name = "Event19365_modifier"
+			duration = 365
+		}
+                national_unity = 1
+                dissent = -5
+		set_country_flag = Event19365
+	}
+}
+#召开中共中央政治局会议
+country_event = {
+	id = 19366	
+	title = "召开中共中央政治局会议"	
+	desc = "Event19366desc"
+	picture = "Event19362"
+	trigger = {
+		tag = CHC
+	        war_with = JAP 
+		not = { has_country_flag = Event19366 }
+		date = 1936.3.20
+	}
+	option = {
+		name = "推进形成抗日民族统一战线"                       
+                dissent = -5
+                national_unity = 5
+		set_country_flag = Event19366
+	}
+}
+#阿部定事件
+country_event = {
+	id = 19367	
+	title = "阿部定事件"	
+	desc = "Event19367desc"
+	picture = "Event19362"
+	trigger = {
+		tag = JAP	      
+		not = { has_country_flag = Event19367 }
+		date = 1936.5.18
+	}
+	option = {
+		name = "哦"                       
+		set_country_flag = Event19367
+	}
+}
+#提出图灵机模型
+country_event = {
+	id = 19368
+        major = yes	
+	title = "提出图灵机模型"	
+	desc = "Event19368desc"
+	picture = "Event19362"
+	trigger = {
+		tag = ENG	      
+		not = { has_country_flag = Event19368 }
+		date = 1936.5.28
+	}
+	option = {
+		name = "哦"                       
+		set_country_flag = Event19368
+	}
+}
+#成立全国各界救国联合会
+country_event = {
+	id = 19369
+        major = yes	
+	title = "成立全国各界救国联合会"	
+	desc = "Event19369desc"
+	picture = "Event19362"
+	trigger = {
+		tag = CHI
+                war_with = CHC
+                has_country_flag = Event19366	      
+		not = { has_country_flag = Event19369 }
+		date = 1936.5.31
+	}
+	option = {
+		name = "哦" 
+                national_unity = 5                      
+		set_country_flag = Event19369
+        }
+	option = {
+		name = "逮捕他们"  
+                add_country_modifier = {
+		        name = "Event19369_modifier"
+			duration = 506
+		}                     
+		set_country_flag = Event19369
+	}
+}
+#斯诺到来
+country_event = {
+	id = 193610
+        major = yes	
+	title = "埃德加·斯诺以《每日先驱报》特派记者的身份来到陕北"	
+	desc = "Event193610desc"
+	picture = "Event19362"
+	trigger = {
+		tag = CHC	      
+		not = { has_country_flag = Event193610 }
+		date = 1936.6.1
+	}
+	option = {
+		name = "欢迎他"                       
+		set_country_flag = Event193610
+	}
+}
+#小说《飘》发表
+country_event = {
+	id = 1936113
+        major = yes	
+	title = "小说《飘》发表"	
+	desc = "Event1936113desc"
+	picture = "Event19362"
+	trigger = {
+		tag = USA	      
+		not = { has_country_flag = Event1936113 }
+		date = 1936.6.30
+	}
+	option = {
+		name = "精彩"                       
+		set_country_flag = Event1936113
+	}
+}
+#王亚樵事件
+country_event = {
+	id = 193611	
+	title = "王亚樵被戴笠暗杀于广西梧州"	
+	desc = "Event193611desc"
+	picture = "Event19362"
+	trigger = {
+		tag = CHI	      
+		not = { has_country_flag = Event193611 }
+		date = 1936.10.20
+	}
+	option = {
+		name = "太好了" 
+                add_country_modifier = {
+			name = "Event193611_modifier"
+			duration = 100
+		}                               
+		set_country_flag = Event193611
+	}
+}
+#中央作出《关于青年工作的决定》
+country_event = {
+	id = 193612	
+	title = "中央作出《关于青年工作的决定》"	
+	desc = "Event193612desc"
+	picture = "Event19362"
+	trigger = {
+		tag = CHC	      
+		not = { has_country_flag = Event193612 }
+		date = 1936.11.1
+	}
+	option = {
+		name = "太好了" 
+                stalinist_PRC = { popularity = 5 }                      
+		set_country_flag = Event193612
+	}
+}

@@ -1,0 +1,65 @@
+spriteTypes = {
+spriteType = {
+	  name = "GFX_counter_chc_gundam"
+	  texturefile = "gfx/mapitems/counters/chc_gundam.dds"
+	  noOfFrames = 1
+	  norefcount = yes
+		transparencecheck = yes
+}
+spriteType = {
+	  name = "GFX_counter_chi_star_destroyer"
+	  texturefile = "gfx/mapitems/counters/chi_star_destroyer.dds"
+	  noOfFrames = 1
+	  norefcount = yes
+		transparencecheck = yes
+}
+spriteType = {
+	  name = "GFX_counter_partisan_bergsjaeger"
+	  texturefile = "gfx/mapitems/counters/partisan_bergsjaeger.dds"
+	  noOfFrames = 1
+	  norefcount = yes
+		transparencecheck = yes
+}
+spriteType = {
+	  name = "GFX_map_counter_chc_gundam"
+	  texturefile = "gfx/mapitems/mapcounters/chc_gundam.dds"
+	  noOfFrames = 1
+	  norefcount = yes
+		transparencecheck = yes
+}
+spriteType = {
+	  name = "GFX_map_counter_chi_star_destroyer"
+	  texturefile = "gfx/mapitems/mapcounters/chi_star_destroyer.dds"
+	  noOfFrames = 1
+	  norefcount = yes
+		transparencecheck = yes
+}
+spriteType = {
+	  name = "GFX_map_counter_partisan_bergsjaeger"
+	  texturefile = "gfx/mapitems/mapcounters/partisan_bergsjaeger.dds"
+	  noOfFrames = 1
+	  norefcount = yes
+		transparencecheck = yes
+}
+spriteType = {
+	  name = "GFX_small_counter_chc_gundam"
+	  texturefile = "gfx/mapitems/smallcounters/chc_gundam.dds"
+	  noOfFrames = 1
+	  norefcount = yes
+		transparencecheck = yes
+}
+spriteType = {
+	  name = "GFX_small_counter_chi_star_destroyer"
+	  texturefile = "gfx/mapitems/smallcounters/chi_star_destroyer.dds"
+	  noOfFrames = 1
+	  norefcount = yes
+		transparencecheck = yes
+}
+spriteType = {
+	  name = "GFX_small_counter_partisan_bergsjaeger"
+	  texturefile = "gfx/mapitems/smallcounters/partisan_bergsjaeger.dds"
+	  noOfFrames = 1
+	  norefcount = yes
+		transparencecheck = yes
+}
+}

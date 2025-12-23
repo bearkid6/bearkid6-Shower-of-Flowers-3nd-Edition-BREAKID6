@@ -1,0 +1,83 @@
+######################
+#   日本扩张议决组   #
+######################
+#南进
+diplomatic_decisions = {
+	   JAP_southing = {
+		potential = {
+			tag = JAP
+                        exists = CHI
+                        exists = USA
+                        exists = ENG
+			war_with = CHI
+			not = { has_global_flag = JAPsouthing } 
+			date = 1941.12.21
+			not = { year = 1942 } 
+			ai = no
+		}
+		allow = {
+			JAP = { controls = annam_region }
+                        JAP = { controls = cochinchina_region }
+		}
+		effect = {
+			set_global_flag = JAPsouthing
+			country_event = 300
+                        JAP = { war = { target = ENG } }
+		        JAP = { war = { target = USA } }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+               #组建南方军
+	         JAP_SA = {
+		potential = {
+			tag = JAP
+                        exists = CHI
+                        exists = USA
+                        exists = ENG
+			war_with = CHI
+                        war_with = ENG
+                        war_with = USA
+		        has_global_flag = JAPsouthing  
+			date = 1941.11.5
+			not = { year = 1937 } 
+			ai = no
+		}
+		allow = {
+			JAP = { controls = IDC }
+		}
+		effect = {
+			country_event = 301
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+                 #北进
+     Japan's north into = {
+		potential = {
+			tag = JAP
+                        exists = CHI
+                        exists = SOV
+			war_with = CHI
+                        GER = { war_with = SOV }
+                        not = { has_global_flag = JAPsouthing }
+			not = { has_global_flag = Japan's north into } 
+                        not = { war_with = SOV }
+			date = 1941.12.21
+			not = { year = 1942 } 
+			ai = no
+		}
+		allow = {
+			JAP = { crude_oil = 100000 }
+		}
+		effect = {
+			set_global_flag =  Japan's north into
+			country_event = 302
+                        JAP = { war = { target = SOV } }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}

@@ -1,0 +1,113 @@
+######################
+#   新式陆军事件组   #
+######################
+#组建德式步兵师
+country_event = {
+         id = 550
+         is_triggered_only = yes
+         title = "建立德式步兵师"
+         desc = "CHI_Event_550_decs"
+         picture = "German armed forces"
+         option = {
+                 name = "组建"
+                 load_oob="CHI_GER_SupportA.txt"
+                 remove_brigade = "国民革命军第106旅"
+		 remove_brigade = "国民革命军第108旅"
+        } 
+}
+#组建苏械攻击军
+country_event = {
+         id = 551
+         is_triggered_only = yes
+         title = "建立苏械攻击军"
+         desc = "CHI_Event_551_decs"
+         picture = "SOV armed forces"
+         option = {
+                 name = "组建"
+                 load_oob = "CHI_SOV_SupportA.txt"}
+                 remove_brigade = "国民革命军第1旅"
+		 remove_brigade = "国民革命军第2旅"
+		 remove_brigade = "国民革命军第232旅"
+		 remove_brigade = "国民革命军第234旅"
+		 remove_brigade = "国民革命军第500旅"
+		 remove_brigade = "国民革命军第501旅"
+		 remove_brigade = "国民革命军第25旅"
+		 remove_brigade = "国民革命军第26旅"
+                 remove_brigade = "国民革命军第227旅"
+		 remove_brigade = "国民革命军第228旅"
+		 remove_brigade = "国民革命军第31旅"
+		 remove_brigade = "国民革命军第33旅"
+		 remove_brigade = "国民革命军第52旅"
+		 remove_brigade = "国民革命军第54旅"
+		 remove_brigade = "国民革命军第172旅"
+		 remove_brigade = "国民革命军第174旅"
+                 remove_brigade = "58师补充团"
+                 remove_brigade = "国民革命军第169旅"
+                 remove_brigade = "国民革命军第171旅"
+                 remove_brigade = "国民革命军第151旅"
+                 remove_brigade = "国民革命军第153旅"
+        }
+
+#组建美械师
+country_enent = {
+         id = 552
+         is_triggered_only = yes
+         title = "建立美械师"
+         desc = "CHI_Event_552_decs"
+         picture = "USA armed forces"
+         option = {
+                 name = "组建"
+                 load_oob = "CHI_USA_SupportA.txt"
+        }
+}
+#组建军委会直属装甲团
+country_event = {
+         id = 553
+         is_triggered_only = yes
+         title = "建立装甲团"
+         desc = "国民党军事委员会直属装甲团，成立于1936年，是200师前身。"
+         picture = "German armed forces"
+         option = {
+                 name = "组建"
+                 load_oob="CHI_TK_SupportA.txt"
+        } 
+}
+#中国宪兵
+country_event = {
+         id = 554
+         is_triggered_only = yes
+         title = "建立宪兵队"
+         desc = "XBDECS"
+         picture = "German armed forces"
+         option = {
+                 name = "组建"
+                 load_oob="CHI_XB_SupportA.txt"             
+        } 
+}
+#中国荣誉师
+country_event = {
+         id = 555
+         is_triggered_only = yes
+         title = "建立荣誉师"
+         desc = "ZJRYD"
+         picture = "German armed forces"
+         option = {
+                 name = "组建"
+                 load_oob="CHI_USA_RoseA.txt"             
+        } 
+}
+#中国亲年军
+country_event = {
+         id = 556
+         is_triggered_only = yes
+         title = "组织青年军"
+         desc = "china_qingnianjun_desc"
+         picture = "German armed forces"
+         option = {
+                 name = "组建"
+                 load_oob="CHI_QinNianJun.txt.txt"             
+        } 
+}
+
+          
+#2018.1.27修订版by二哈           

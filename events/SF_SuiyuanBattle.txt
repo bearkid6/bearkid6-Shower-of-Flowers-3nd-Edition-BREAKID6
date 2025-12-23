@@ -1,0 +1,57 @@
+######################
+#   绥远抗战事件组   #
+######################
+country_event = {
+	id = 1000090
+	major = yes
+	is_triggered_only = yes
+	title = "Event1000090title"
+	desc = "Event1000090desc"
+	picture = "Event1000090"
+	option = {
+		name = "Event1000090option"
+		set_global_flag = suiyuan
+		add_country_modifier = { name = "suiyuan_battle" duration = 90 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000091
+	trigger = {
+		tag = CSY
+		war_with = MEA
+		not = { has_country_flag = Event1000091 }
+	}
+	title = "Event1000091title"
+	desc = "Event1000091desc"
+	option = {
+		name = "Event1000091option"
+		set_country_flag = Event1000091
+		MEA = { remove_brigade = "第1旅" remove_brigade = "第2旅" }
+		load_oob = "CSY_New2D.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000093
+	is_triggered_only = yes
+	title = "Event1000093title"
+	desc = "Event1000093desc"
+	option = {
+		name = "Event1000093option"
+		JAP = { create_vassal = MEA }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000095
+	major = yes
+	is_triggered_only = yes
+	title = "Event1000095title"
+	desc = "Event1000095desc"
+	picture = "NRA_Flag"
+	option = {
+		name = "Event1000095option"
+		ai_chance = { factor = 100 }
+	}
+}

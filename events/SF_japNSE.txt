@@ -1,0 +1,66 @@
+######################
+#   日本扩张事件组   #
+######################
+#成立南方军
+country_event = {
+          id = 300
+          is_triggered_only = yes
+          title = "组建南方军"
+          desc = "JAP_Event_decs300"
+          picture = "news_paper"
+          option = {
+           name = "南进"
+               add_country_modifier = {
+			name = "Event300_modifier"
+			duration = 365
+          }
+              national_unity = 5
+              load_oob = JAP_SA.txt
+         }
+} 
+#攻陷仰光
+country_event = {
+	id = 299
+	major = yes
+	title = "JAP_Event_title299"
+	desc = "JAP_Event_decs299"
+	picture = "Event19361"
+	trigger = {
+		tag = JAP
+                war_with = ENG 
+		not = { has_country_flag = Event299 }
+                JAP = { controls = 6070 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "天皇万岁"
+                national_unity = 5
+		set_country_flag = Event299
+                ai_chance = { factor = 100 }
+	}
+}  
+#攻陷东枝
+country_event = {
+	id = 298
+	major = yes
+	title = "JAP_Event_title298"
+	desc = "JAP_Event_decs298"
+	picture = "Event19361"
+	trigger = {
+		tag = JAP
+                war_with = ENG 
+		not = { has_country_flag = Event298 }
+                JAP = { controls = 9640 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "天皇万岁"
+                national_unity = 5
+		set_country_flag = Event298
+                ai_chance = { factor = 100 }
+	}
+}                                

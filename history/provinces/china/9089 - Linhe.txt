@@ -1,0 +1,9 @@
+owner = CNM
+controller = CNM
+add_core = CNM
+add_core = CHC
+add_core = CHI
+
+
+
+infra = 2

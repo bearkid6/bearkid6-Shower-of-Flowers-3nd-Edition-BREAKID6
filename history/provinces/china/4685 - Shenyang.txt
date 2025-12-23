@@ -1,0 +1,14 @@
+owner = MAN
+controller = MAN
+add_core = MAN
+add_core = CHC
+
+points = 1
+metal = 6.00
+energy = 28.00
+rare_materials = 2.00
+land_fort = 1
+industry = 4
+infra = 6
+manpower = 10.00
+leadership = 1.00

@@ -1,0 +1,73 @@
+diplomatic_decisions = {
+
+#反攻延安（AI）
+Counterattack_Yanan = {
+	potential = { 
+	  ai = yes
+	  tag = CHC
+	  year = 1937
+	  not = { year = 1945 }
+	  war_with = JAP 
+    not = { has_country_flag = Counterattack_Yanan }
+        }
+
+	allow = {
+        surrender_progress = 100
+	  }
+
+	effect = {
+	  set_country_flag = Counterattack_Yanan
+	   7417 = { change_controller = CHC land_fort = 2 }
+	   7410 = { change_controller = CHC }
+	   7405 = { change_controller = CHC }
+	   7411 = { change_controller = CHC }
+	   5335 = { change_controller = CHC }
+	   9234 = { change_controller = CHC }
+	   capital = 7417
+	   supplies = 2000
+	   load_oob = "CHC_ai_defence.txt"
+	   officer_pool = 2000
+	  }
+	ai_will_do = {
+	      factor = 1
+	   }
+}
+
+#游而不击（AI）
+Travel_rather_than_strike = {
+	potential = { 
+	  ai = yes
+	  tag = CHC
+	  year = 1937
+	  not = { year = 1945 }
+	  war_with = JAP 
+	  JAP = { ai = yes }
+	  has_country_flag = Counterattack_Yanan
+    not = { has_country_flag = youerbuji }
+        }
+
+	  allow = {
+        surrender_progress = 100
+	  }
+
+	effect = {
+	  set_country_flag = youerbuji
+	   JAP = { end_war = CHC }
+	   capital = 7417
+	  }
+	ai_will_do = {
+	      factor = 1
+	   }
+}
+
+
+
+
+
+
+
+
+
+
+
+}

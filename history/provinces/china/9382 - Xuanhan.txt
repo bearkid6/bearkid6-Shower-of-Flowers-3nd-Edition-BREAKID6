@@ -1,0 +1,6 @@
+owner = CSC
+controller = CSC
+add_core = CSC
+add_core = CHC
+add_core = CHI
+infra = 2

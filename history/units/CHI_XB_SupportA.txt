@@ -1,0 +1,4 @@
+division = {
+       name = "中国宪兵"
+       location = 5494
+       regiment = { type = chi_star_destroyer name = "中国宪兵" experience = 100 strength = 100 builder = GER historical_model = 2 } }

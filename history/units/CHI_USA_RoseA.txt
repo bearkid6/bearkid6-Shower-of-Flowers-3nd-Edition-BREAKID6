@@ -1,0 +1,22 @@
+division = {
+		name = "荣誉第1师"
+		location = 5494
+		regiment = { type = chi_star_destroyer experience = 99 name = "第 1 荣誉步兵团" builder = USA historical_model = 3 }
+		regiment = { type = chi_star_destroyer experience = 90 name = "第 2 荣誉步兵团" builder = USA historical_model = 3 }
+		regiment = { type = chi_star_destroyer experience = 84 name = "第 3 荣誉步兵团" builder = USA historical_model = 3 }
+		regiment = { type = sp_artillery_brigade experience = 70 name = "师属突击炮团" builder = USA historical_model = 3 }
+		regiment = { type = armor_brigade experience = 80 name = "师属装甲团" builder = USA historical_model = 3 }
+		regiment = { type = tank_destroyer_brigade experience = 80 name = "师属反坦克营" builder = USA historical_model = 3 }
+		regiment = { type = armored_car_brigade experience = 70 name = "师属卡车团" builder = USA historical_model = 3 }
+		
+	}
+	division = {
+		name = "荣誉第2师"
+		location = 5494
+		regiment = { type = chi_star_destroyer experience = 90 name = "第 1 荣誉步兵团" builder = USA historical_model = 3 }
+		regiment = { type = chi_star_destroyer experience = 84 name = "第 2 荣誉步兵团" builder = USA historical_model = 3 }
+		regiment = { type = chi_star_destroyer experience = 70 name = "第 3 荣誉步兵团" builder = USA historical_model = 3 }
+		regiment = { type = engineer_brigade experience = 80 name = "师属工兵营" builder = USA historical_model = 3 }
+		regiment = { type = tank_destroyer_brigade experience = 80 name = "师属反坦克营" builder = USA historical_model = 3 }
+		regiment = { type = armored_car_brigade experience = 70 name = "师属卡车团" builder = USA historical_model = 3 }
+	}

@@ -1,0 +1,64 @@
+####################
+#   野战军议决组   #
+####################
+diplomatic_decisions = {
+	HUAYEA_chi = {            
+		potential = {
+			tag = CHC
+                        exists = CHC
+			war_with = CHI
+			not = { has_country_flag = DY } 
+			date = 1947.1
+			not = { year = 1948 } 
+		}
+		allow = {
+			CHI = { controls = 5494 }
+		}
+		effect = {
+			set_country_flag = DY
+			country_event = 6666
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	    DBY_chi = {               
+		potential = {
+			tag = CHC
+                        exists = CHC
+			not = { has_country_flag = DBY } 
+			date = 1946.7.7
+			not = { year = 1947 } 
+		}
+		allow = {
+                         CHI = { controls = 5494 }
+		}
+		effect = {
+			set_country_flag = DBY 
+			country_event = 6667
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	XBY_chi = {               
+		potential = {
+			tag = CHC
+                        exists = CHC
+			war_with = CHI
+			not = { has_country_flag = XBY }
+                        has_country_flag = ZSHBQFTYUE 
+			date = 1947.11.1
+			not = { year = 1948 } 
+		}
+		allow = {
+			CHI = { controls = 5494 }
+		}
+		effect = {
+			set_country_flag = XBY
+			country_event = 6668
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}

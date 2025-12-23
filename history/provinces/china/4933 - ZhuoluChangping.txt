@@ -1,0 +1,7 @@
+owner = CJC
+controller = CJC
+add_core = CHC
+add_core = CJC
+add_core = CHI
+
+infra = 5

@@ -1,0 +1,11 @@
+owner = CSX
+controller = CSX
+add_core = CSX
+add_core = CHI
+add_core = CHC
+points = 1
+land_fort = 1
+infra = 3
+1938.9.1 = {
+	owner = CHC 	controller = CHC
+}

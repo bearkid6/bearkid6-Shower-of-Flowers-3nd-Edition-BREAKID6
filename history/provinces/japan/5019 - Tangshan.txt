@@ -1,0 +1,8 @@
+owner = CJD
+controller = CJD
+
+
+add_core = CHI
+add_core = CHC
+energy = 14.00
+infra = 6

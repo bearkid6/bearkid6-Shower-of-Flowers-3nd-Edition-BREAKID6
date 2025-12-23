@@ -1,0 +1,17 @@
+owner = CJC
+
+controller = CJC
+
+ 
+
+add_core = CHC
+add_core = CHI
+add_core = CJC
+
+infra = 4
+
+1937.7.29 = {
+
+	controller = JAP
+
+}

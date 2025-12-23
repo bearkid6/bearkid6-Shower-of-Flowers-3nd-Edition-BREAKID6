@@ -1,0 +1,48 @@
+######################
+#   国府新军事件组   #
+######################
+#青年军
+country_event = {
+	id = 1000064
+	is_triggered_only = yes
+	title = "CHI_Event_1000064"
+	subtitle = "CHI_Event_1000064_subtitle"
+	desc = "CHI_Event_1000064_desc"
+	picture = "CHI_Flag"
+	option = {
+		name = "CHI_Event_1000064_option"
+		load_oob = "CHI_1.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+#远征军
+country_event = {
+	id = 1000065
+	major = yes
+	is_triggered_only = yes
+	title = "CHI_Event_1000065"
+	desc = "CHI_Event_1000065_desc"
+	picture = "CHI_Event_1000065"
+	option = {
+		name = "CHI_Event_1000065_option"
+		manpower = -100
+		ENG = { country_event = 1000066 }
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = "玩儿蛋去"
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 1000066
+	is_triggered_only = yes
+	title = "ENG_Event_1000066"
+	desc = "ENG_Event_1000066_desc"
+	picture = "CHI_Event_1000065"
+	option = {
+		name = "CHI_Event_1000030_option"
+		load_oob = "CHI_2.txt"
+		ai_chance = { factor = 100 }
+	}
+}

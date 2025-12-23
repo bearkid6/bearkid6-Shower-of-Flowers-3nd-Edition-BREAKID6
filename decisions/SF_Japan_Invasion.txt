@@ -1,0 +1,95 @@
+####################
+#   日本侵华决议   #
+####################
+diplomatic_decisions = {
+	# 平津作战
+	the_north_china_incident = {
+		major = yes
+		potential = {
+			tag = JAP
+			not = { has_country_flag = the_marco_polo_bridge_incident }
+			exists = CHI
+			not = { vassal_of = CHI }
+			not = { war_with = CHI }
+			CHI = {
+				not = { alliance_with = SOV }
+				not = { alliance_with = USA }
+				not = { alliance_with = ENG }
+				not = { vassal_of = JAP }
+			}
+			not = { controls = 4979 }	# Beiping
+			has_country_flag = Japan_Preparing_3
+			not = { has_global_flag = Event10000272 }
+		}
+		allow = {
+			not = { alliance_with = CHI }
+			date = 1937.7.7
+		}
+		effect = {
+			set_country_flag = the_marco_polo_bridge_incident
+			JAP = { country_event = 1701 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# 进攻上海
+	shanghai_incident = {
+		major = yes
+		potential = {
+			tag = JAP
+			not = { has_country_flag = shanghai_incident }
+			exists = CHI
+			not = { vassal_of = CHI }
+			CHI = {
+				not = { vassal_of = JAP }
+			}
+			not = { controls = 5542 }	
+			has_country_flag = Japan_Preparing_3
+			has_global_flag = CHI_Event_1000021
+			not = { has_global_flag = Event10000272 }
+			CHI = { not = { has_country_flag = Chinese_Counterattack } }
+		}
+		allow = {
+			not = { alliance_with = CHI }
+			date = 1937.8.13
+		}
+		effect = {
+			set_country_flag = shanghai_incident
+			JAP = { country_event = 1000019 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	shanghai_incident2 = {
+		major = yes
+		potential = {
+			tag = JAP
+			not = { has_country_flag = shanghai_incident }
+			exists = CHI
+			not = { vassal_of = CHI }
+			CHI = {
+				not = { vassal_of = JAP }
+			}
+			not = { controls = 5542 }	
+			has_country_flag = Japan_Preparing_3
+			has_global_flag = CHI_Event_1000021
+			not = { has_global_flag = Event10000272 }
+			CHI = { has_country_flag = Chinese_Counterattack }
+		}
+		allow = {
+			not = { alliance_with = CHI }
+			date = 1937.8.13
+		}
+		effect = {
+			set_country_flag = shanghai_incident
+			JAP = { country_event = 1011019 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

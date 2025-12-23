@@ -1,0 +1,48 @@
+######################
+#   国府新军事件组   #
+######################
+#青年军
+diplomatic_decisions = {
+	china_qingnianjun = {
+		potential = {
+			tag = CHI
+			war_with = JAP
+			not = { vassal_of = JAP }
+			not = { has_country_flag = china_qingnianjun }
+			has_country_flag = jap_seizes_coast_chi
+			exists = WJW
+		}
+		allow = {
+			has_country_flag = CHI_Event_1000057
+			lost_national = 0.5
+		}
+		effect = {
+			set_country_flag = china_qingnianjun
+			country_event = 1000064
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#远征军
+diplomatic_decisions = {
+	china_yuanzhengjun = {
+		potential = {
+			tag = ENG
+			war_with = JAP
+			exists = CHI
+			alliance_with = CHI
+			not = { has_country_flag = china_yuanzhengjun }
+		}
+		allow = {
+			not = { ENG = { controls = 7610 } }
+		}
+		effect = {
+			set_country_flag = china_yuanzhengjun
+			CHI = { country_event = 1000065 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

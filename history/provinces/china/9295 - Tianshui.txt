@@ -1,0 +1,12 @@
+owner = CDB
+controller = CDB
+add_core = CHC
+add_core = CHI
+add_core = CDB
+infra = 2
+points = 1
+manpower = 1.00
+leadership = 0.10
+1937.1.2 = {
+	owner = CHI
+}

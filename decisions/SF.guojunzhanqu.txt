@@ -1,0 +1,94 @@
+##################
+# 战区成立议决组 #
+##################
+diplomatic_decisions = {
+               第一战区 = {
+		potential = {
+			tag = CHI
+			date = 1937.7.9 
+		        not = { war_with = CHC }
+		}
+		allow = {
+			not = { has_country_flag = event0007 }
+		}
+		effect = {
+			set_country_flag = event0007
+			country_event = 0007 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}                    
+              第二战区 = {
+		potential = {
+			tag = CHI
+			date = 1937.7.9
+                        war_with = JAP
+		        not = { war_with = CHC }
+		}
+		allow = {
+			not = { has_country_flag = event0006 }
+		}
+		effect = {
+			set_country_flag = event0006
+			CSX = { country_event = 0006 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	                          
+               第三战区 = {
+		potential = {
+			tag = CHI
+			date = 1937.8.13
+                        war_with = JAP
+		        not = { war_with = CHC }
+		}
+		allow = {
+			not = { has_country_flag = event0008 }
+		}
+		effect = {
+			set_country_flag = event0008
+			country_event = 0008 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+               第五战区 = {
+		potential = {
+			tag = CHI
+		        not = { war_with = CHC }
+                        war_with = JAP
+                        JAP = { controller = 5275 }
+		}
+		allow = {
+			not = { has_country_flag = event0009 }
+		}
+		effect = {
+			set_country_flag = event0009
+                        country_event = 0009 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+               第四战区 = {
+		potential = {
+			tag = CHI
+		        not = { war_with = CHC }
+                        war_with = JAP
+                        JAP = { controller = 5275 }
+		}
+		allow = {
+			not = { has_country_flag = event00010 }
+		}
+		effect = {
+			set_country_flag = event00010
+		        country_event = 00010 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

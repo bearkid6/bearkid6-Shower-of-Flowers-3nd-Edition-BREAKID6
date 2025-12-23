@@ -1,0 +1,235 @@
+#####################
+#  三次反共事件组   #
+#####################
+country_event = {
+        major = yes
+	id = 700000
+	title = "70title"
+	desc = "70decs"
+	picture = "Event32"
+	trigger = {
+		tag = CHI
+                exists = CHI
+		date = 1939.1.1
+                not = { has_country_flag = Event700000 }
+                CHI = { controls = 9478 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "70option1"
+                 add_country_modifier = {
+			name = "Event70_modifier"
+			duration = 120
+		}
+		set_country_flag = Event700000
+                CHC = { country_event = 7012 }
+		ai_chance = { factor = 100 }
+       	}
+	option = {
+		name = "不行"
+		set_country_flag = Event700000
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 7012
+	is_triggered_only = yes
+	title = "wzqh"
+	desc = "wzqhdesc"
+	picture = "disanzhanqu"
+	option = {
+		name = "去他娘的老将"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+        major = yes
+	id = 700001
+	title = "71title"
+	desc = "71decs"
+	picture = "Event32"
+	trigger = {
+		tag = CHI
+                exists = CHI
+		date = 1939.3.1
+                not = { has_country_flag = EventJX }
+                has_country_flag = Event700000
+                CHI = { controls = 9478 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "71option1"
+                 add_country_modifier = {
+			name = "Event71_modifier"
+			duration = 120
+		}
+		set_country_flag = EventJX
+                CHC = { country_event = 7222 }
+		ai_chance = { factor = 100 }
+       	}
+	option = {
+		name = "71option2"
+		set_country_flag = EventJX
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 7222
+	is_triggered_only = yes
+	title = "FG1qh"
+	desc = "FG1desc"
+	picture = "disanzhanqu"
+	option = {
+		name = "狠狠地回击这些狗娘养的"
+                add_country_modifier = {
+			name = "Event69_modifier"
+			duration = 120
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+        major = yes
+	id = 700002
+	title = "73title"
+	desc = "73decs"
+	picture = "Event32"
+	trigger = {
+		tag = CHI
+                exists = CHI
+		date = 1941.1.1
+                not = { has_country_flag = Event700001 }
+                CHI = { controls = 9478 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "73option1"
+		set_country_flag = Event700001
+                CHC = { country_event = 7223 }
+		ai_chance = { factor = 100 }
+       	}
+	option = {
+		name = "我们应以抗战大局为重"
+		set_country_flag = Event700001
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 7223
+	is_triggered_only = yes
+	title = "FG2qh"
+	desc = "FG2desc"
+	picture = "disanzhanqu"
+	option = {
+		name = "FG"
+                CHI = { country_event = 7224 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 7224
+	is_triggered_only = yes
+	title = "FG3qh"
+	desc = "FG3desc"
+	picture = "disanzhanqu"
+	option = {
+		name = "FG3"
+                CHC = { country_event = 7225 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 7225
+	is_triggered_only = yes
+	title = "FG4qh"
+	desc = "FG4desc"
+	picture = "disanzhanqu"
+	option = {
+		name = "FG4"
+                CHI = { country_event = 7226 }
+		ai_chance = { factor = 100 }
+                }
+                option = {
+		name = "FG32"
+                  add_country_modifier = {
+			name = "Event68_modifier"
+			duration = 120
+		}
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 7226
+	is_triggered_only = yes
+	title = "FG6qh"
+	desc = "FG6desc"
+	picture = "disanzhanqu"
+	option = {
+		name = "打"
+                CHC = { country_event = 7227 }
+                CSC = { country_event = 7228 }
+                CNM = { country_event = 7228 }
+                CQM = { country_event = 7228 }
+                CGX = { country_event = 7228 }
+                CYN = { country_event = 7228 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 7227
+	is_triggered_only = yes
+	title = "FG7qh"
+	desc = "FG7desc"
+	picture = "disanzhanqu"
+	option = {
+		name = "FG6"
+                kill_leader = 76314
+                CHC = { country_event = 7229 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 7228
+	is_triggered_only = yes
+	title = "FG8qh"
+	desc = "FG8desc"
+	picture = "disanzhanqu"
+	option = {
+		name = "声讨蒋光头！"
+                CHI = { country_event = 7111 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 7229
+	is_triggered_only = yes
+	title = "FG9qh"
+	desc = "FG9desc"
+	picture = "disanzhanqu"
+	option = {
+		name = "让狗娘养的蒋光头看着！"
+                load_oob = "N4A.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 7111
+	is_triggered_only = yes
+	title = "FG108qh"
+	desc = "FG10desc"
+	picture = "disanzhanqu"
+	option = {
+		name = "完了"
+                  add_country_modifier = {
+			name = "Event72_modifier"
+			duration = 120
+		}
+		ai_chance = { factor = 100 }
+	}
+}

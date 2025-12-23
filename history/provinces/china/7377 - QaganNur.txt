@@ -1,0 +1,9 @@
+owner = CSY
+controller = CSY
+
+
+add_core = CHC
+add_core = CSY
+add_core = CHI
+points = 1
+infra = 2

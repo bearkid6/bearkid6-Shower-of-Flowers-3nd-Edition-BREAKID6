@@ -1,0 +1,45 @@
+country_event = {
+
+	id = 1000001
+	
+	is_triggered_only = yes
+	
+	title = "introduction_chc_title"
+	subtitle = "长夜难明赤县天，百年魔怪舞翩跹。"
+	desc = "introduction_chc"
+	picture = "CHC_Flag"
+	option = {
+		name = "introduction_chc_option"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+
+	id = 1000002
+	
+	is_triggered_only = yes
+	
+	title = "introduction_chi_title"
+	subtitle = "攘外必先安内，抗日必先剿共！"
+	desc = "introduction_chi"
+	picture = "CHI_Flag"
+	option = {
+		name = "introduction_chi_option"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+
+	id = 1000003
+	
+	is_triggered_only = yes
+	
+	title = "introduction_jap_title"
+	subtitle = "于天之下，遍布武力。"
+	desc = "introduction_jap"
+	picture = "JAP_Flag"
+	option = {
+		name = "introduction_jap_option"
+		ai_chance = { factor = 100 }
+	}
+}

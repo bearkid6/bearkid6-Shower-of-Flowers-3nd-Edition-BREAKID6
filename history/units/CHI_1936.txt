@@ -1,0 +1,1184 @@
+CSD = { military_access = yes }
+CJC = { military_access = yes }
+theatre = {
+	name = "中华民国陆海空军总司令部"
+	location = 5494
+	leader = 50048
+	regiment = { type = hq_brigade name = "南京指挥部" historical_model = 0 }
+	division= {
+		name = "中央军校教导总队"
+		leader = 50156
+		location = 5494
+		regiment = { type = chi_star_destroyer name = "第1大队" experience = 65 builder = GER historical_model = 1 }
+		regiment = { type = chi_star_destroyer name = "第2大队" experience = 55 builder = GER historical_model = 1 }
+                regiment = { type = chi_star_destroyer name = "预备队" experience = 35 builder = GER historical_model = 1 }
+                regiment = { type = artillery_brigade name = "炮兵团" experience = 35 builder = GER historical_model = 0 }
+	}
+	division= {
+		name = "国民革命军第2师"
+		leader = 50125
+		
+		location = 7209
+		regiment = { type = chi_star_destroyer name = "国民革命军第4旅" experience = 10 strength = 30 historical_model = 1 }
+		regiment = { type = chi_star_destroyer name = "国民革命军第6旅" experience = 10 strength = 20 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "补充团" strength = 10 historical_model = 0 }
+		regiment = { type = cavalry_brigade name = "骑兵团" experience = 10 strength = 10 historical_model = 0 }
+	}
+	division= {
+		name = "国民革命军独立第20旅"
+		leader = 50071
+		location = 7209
+		regiment = { type = chi_star_destroyer name = "第4旅补充团" builder = GER experience = 10 strength = 30 historical_model = 1 }
+		regiment = { type = chi_star_destroyer name = "第6旅补充团" builder = GER experience = 10 strength = 30 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "独20旅补充团" strength = 10 historical_model = 0 }
+		 regiment = { type = artillery_brigade name = "炮兵团" builder = GER historical_model = 0 }
+	}
+	
+	division= {
+		name = "国民革命军第25师"
+		location = 5177
+		leader = 50154
+		regiment = { type = infantry_brigade name = "国民革命军第73旅" builder = GER experience = 10 strength = 20 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "国民革命军第75旅" builder = GER experience = 10 strength = 20 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "补充团" strength = 10 historical_model = 0 }
+	}
+
+	division= {
+		name = "国民革命军第51师"
+		location = 5451
+		regiment = { type = chi_star_destroyer name = "国民革命军第151旅" experience = 10 strength = 20 historical_model = 1 }
+		regiment = { type = chi_star_destroyer name = "国民革命军第153旅" experience = 10 strength = 20 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "补充团" strength = 10 historical_model = 0 }
+	}
+	division= {
+			name = "国民革命军第57师"
+			location = 7435
+			leader = 50351
+			regiment = { type = infantry_brigade name = "国民革命军第169旅" strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade name = "国民革命军第171旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		}
+	division= {
+		name = "国民革命军第58师"
+		location = 7516
+		regiment = { type = chi_star_destroyer name = "国民革命军第172旅" experience = 10 strength = 20 historical_model = 1 }
+		regiment = { type = chi_star_destroyer name = "国民革命军第174旅" experience = 10 strength = 20 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+	}
+	corps = {
+		name = "税警总团"
+		location = 5494
+		regiment = { type = hq_brigade name = "税警总团司令部" historical_model = 2 }
+		regiment = { type = chi_star_destroyer name = "税警总团补充大队" experience = 40 builder = GER historical_model = 1 }
+		regiment = { type = chi_star_destroyer name = "税警总团补充大队" experience = 40 builder = GER historical_model = 1 }
+		regiment = { type = artillery_brigade name = "炮兵团" builder = GER historical_model = 0 }
+		division= {
+			name = "税警总团第1团"
+			location = 5494
+			regiment = { type = chi_star_destroyer experience = 20 builder = GER historical_model = 1 }
+			regiment = { type = chi_star_destroyer experience = 20 builder = GER historical_model = 1 }
+			regiment = { type = artillery_brigade name = "炮兵团" builder = GER historical_model = 0 }
+		}
+		division= {
+			name = "税警总团第2团"
+			location = 5494
+			regiment = { type =chi_star_destroyer experience = 20 builder = GER historical_model = 1 }
+			regiment = { type = chi_star_destroyer experience = 20 builder = GER historical_model = 1 }
+			regiment = { type = artillery_brigade name = "炮兵团" builder = GER historical_model = 0 }
+		}
+		division= {
+			name = "税警总团第3团"
+			location = 5494
+			regiment = { type = chi_star_destroyer experience = 20 builder = GER historical_model = 1 }
+			regiment = { type = chi_star_destroyer experience = 20 builder = GER historical_model = 1 }
+		}
+		division= {
+			name = "税警总团第4团"
+			location = 5494
+			regiment = { type = chi_star_destroyer experience = 20 builder = GER historical_model = 1 }
+			regiment = { type = chi_star_destroyer experience = 20 builder = GER historical_model = 1 }
+		}
+		division= {
+			name = "税警总团第5团"
+			location = 5494
+			regiment = { type = chi_star_destroyer experience = 20 builder = GER historical_model = 1 }
+			regiment = { type = chi_star_destroyer experience = 20 builder = GER historical_model = 1 }
+		}
+	}
+	army = {
+		name = "驻豫绥靖公署"
+		location = 5383
+		regiment = { type = hq_brigade name = "驻豫绥靖公署" historical_model = 0 }
+		regiment = { type = militia_brigade name = "国民革命军独立第19旅" strength = 20 historical_model = 0 }
+		regiment = { type = militia_brigade name = "国民革命军独立第46旅" strength = 20 historical_model = 0 }
+		regiment = { type = cavalry_brigade name = "国民革命军骑兵第14旅" strength = 20 historical_model = 0 }
+		corps = {
+			name = "国民革命军第3军"
+			location = 5383
+			regiment = { type = hq_brigade name = "国民革命军第3军司令部" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			division= {
+				name = "国民革命军第7师"
+				location = 5383
+				regiment = { type = infantry_brigade name = "国民革命军第19旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "国民革命军第21旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "独立团" strength = 10 historical_model = 0 }
+			}
+			division= {
+				name = "国民革命军第12师"
+				location = 5401
+				regiment = { type = infantry_brigade name = "国民革命军第34旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "国民革命军第35旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "补充团" strength = 10 historical_model = 0 }
+			}
+		}
+		division= {
+			name = "国民革命军第95师"
+			location = 5434
+			regiment = { type = infantry_brigade name = "国民革命军第283旅" strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade name = "国民革命军第285旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		}
+		division= {
+			name = "国民革命军第166师"
+			location = 7447
+			regiment = { type = militia_brigade name = "国民革命军第496旅" strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade name = "国民革命军第498旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		}
+		
+	}
+		division= {
+		name = "国民革命军第21师"
+		location = 7417
+		regiment = { type = infantry_brigade name = "国民革命军第61旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "国民革命军第63旅" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+	}
+	division= {
+		name = "国民革命军第47师"
+		location = 5618
+		regiment = { type = infantry_brigade name = "国民革命军第141旅" strength = 20 historical_model = 0 }
+		regiment = { type = militia_brigade name = "国民革命军第193旅" strength = 20 historical_model = 0 }
+		regiment = { type = militia_brigade name = "补充团" strength = 10 historical_model = 0 }
+	}
+	army = {
+		name = "驻闽绥靖公署"
+		location = 5710
+		regiment = { type = hq_brigade name = "驻闽绥靖公署" historical_model = 0 }
+		corps = {
+			name = "国民革命军第20路军"
+			location = 5728
+			regiment = { type = hq_brigade name = "国民革命军第20路军司令部" historical_model = 0 }
+			division= {
+				name = "国民革命军第75师"
+				location = 5728
+				regiment = { type = infantry_brigade name = "国民革命军第223旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "国民革命军第225旅" strength = 20 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			}
+			
+		}
+		corps = {
+			name = "国民革命军第2军"
+			location = 5710
+			regiment = { type = hq_brigade name = "国民革命军第2军司令部" historical_model = 1 }
+			regiment = { type = chi_star_destroyer name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			regiment = { type = chi_star_destroyer name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			division= {
+				name = "国民革命军第3师"
+				location = 5710
+				leader = 50190
+				regiment = { type = chi_star_destroyer name = "国民革命军第88旅" experience = 10 strength = 20 historical_model = 1 }
+				regiment = { type = chi_star_destroyer name = "国民革命军第98旅" experience = 10 strength = 20 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			}
+			division= {
+				name = "国民革命军第9师"
+				location = 7537
+				leader = 50189
+				regiment = { type = chi_star_destroyer name = "国民革命军第25旅" experience = 10 strength = 20 historical_model = 1 }
+				regiment = { type = chi_star_destroyer name = "国民革命军第26旅" experience = 10 strength = 20 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "补充旅" experience = 10 strength = 20 historical_model = 0 }
+			}
+			division= {
+				name = "国民革命军第76师"
+				location = 5728
+				regiment = { type = infantry_brigade name = "国民革命军第227旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "国民革命军第228旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "补充团" strength = 10 historical_model = 0 }
+			}
+			division= {
+				name = "国民革命军第80师"
+				location = 5728
+				leader = 50189
+				regiment = { type = infantry_brigade name = "国民革命军第238旅" experience = 10 strength = 20 historical_model = 1 }
+				regiment = { type = infantry_brigade name = "国民革命军第239旅" experience = 10 strength = 20 historical_model = 0 }
+			}			
+			division= {
+			name = "国民革命军第103师"
+			location = 7535
+			regiment = { type = militia_brigade name = "国民革命军第103师" historical_model = 0 }
+		}
+		}
+		division= {
+			name = "国民革命军第36师"
+			location = 5710
+			regiment = { type = infantry_brigade name = "国民革命军第106旅" experience = 10 strength = 20 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "国民革命军第108旅" experience = 10 strength = 20 historical_model = 0 }
+			
+		}
+		division= {
+			name = "国民革命军第45师"
+			location = 4517
+			regiment = { type = infantry_brigade name = "国民革命军第133旅" strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade name = "国民革命军第134旅" strength = 20 historical_model = 0 }
+		}
+		division= {
+			name = "国民革命军第46师"
+			location = 5732
+			regiment = { type = infantry_brigade name = "国民革命军第136旅" experience = 5 strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade name = "国民革命军第137旅" strength = 20 historical_model = 0 }
+		}
+		division= {
+			name = "国民革命军第52师"
+			location = 5710
+			regiment = { type = militia_brigade name = "国民革命军第154旅" strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade name = "国民革命军第156旅" strength = 20 historical_model = 0 }
+		}
+	}
+	armygroup = {
+		name = "川鄂湘黔边区绥靖公署"
+		location = 5848
+		regiment = { type = hq_brigade name = "川鄂湘黔边区绥靖公署" historical_model = 0 }
+		army = {
+			name = "国民革命军第16路军"
+			location = 5848
+			regiment = { type = hq_brigade name = "国民革命军第16路军司令部" historical_model = 0 }
+			corps = {
+				name = "国民革命军第10军"
+				location = 5848
+				regiment = { type = hq_brigade name = "国民革命军第10军司令部" historical_model = 0 }
+				regiment = { type = militia_brigade name = "补充团" strength = 10 historical_model = 0 }
+				regiment = { type = militia_brigade name = "补充团" strength = 10 historical_model = 0 }
+				regiment = { type = militia_brigade name = "补充团" strength = 10 historical_model = 0 }
+				division= {
+					name = "国民革命军第40师"
+					location = 7498
+					regiment = { type = infantry_brigade name = "国民革命军第40师" historical_model = 0 }
+					regiment = { type = infantry_brigade name = "国民革命军第40师" historical_model = 0 }
+					regiment = { type = infantry_brigade name = "国民革命军第40师" historical_model = 0 }
+					
+				}
+				division= {
+					name = "国民革命军第41师"
+					location = 5848
+					regiment = { type = infantry_brigade name = "国民革命军第121旅" strength = 20 historical_model = 0 }
+					regiment = { type = militia_brigade name = "国民革命军第123旅" strength = 20 historical_model = 0 }
+					regiment = { type = militia_brigade name = "补充团" strength = 10 historical_model = 0 }
+				}
+				division= {
+					name = "国民革命军第48师"
+					location = 5848
+					regiment = { type = infantry_brigade name = "国民革命军第142旅" strength = 20 historical_model = 0 }
+					regiment = { type = militia_brigade name = "国民革命军第144旅" strength = 20 historical_model = 0 }
+					regiment = { type = militia_brigade name = "补充团" strength = 10 historical_model = 0 }
+				}
+			}
+		}
+	}
+	army = {
+		name = "鄂豫皖边区督办"
+		location = 5537
+		regiment = { type = hq_brigade name = "鄂豫皖边区督办" historical_model = 0 }
+		regiment = { type = militia_brigade name = "国民革命军独立第5旅" strength = 20 historical_model = 0 }
+		regiment = { type = militia_brigade name = "国民革命军独立第40旅" strength = 20 historical_model = 0 }
+		corps = {
+			name = "国民革命军第14军"
+			location = 5537
+			regiment = { type = hq_brigade name = "国民革命军第14军司令部" historical_model = 1 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			division= {
+				name = "国民革命军第10师"
+				location = 5383
+				leader = 50180
+				regiment = { type = infantry_brigade name = "国民革命军第28旅" experience = 10 strength = 20 historical_model = 1 }
+				regiment = { type = infantry_brigade name = "国民革命军第30旅" experience = 10 strength = 20 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			}
+			division= {
+				name = "国民革命军第83师"
+				location = 7493
+				leader = 50210
+				regiment = { type = infantry_brigade name = "国民革命军第247旅" experience = 10 strength = 20 historical_model = 1 }
+				regiment = { type = infantry_brigade name = "国民革命军第249旅" experience = 10 strength = 20 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			}
+			division= {
+		name = "国民革命军第85师"
+		location = 5470
+		regiment = { type = infantry_brigade name = "国民革命军第252旅" strength = 20 historical_model = 0 }
+		regiment = { type = militia_brigade name = "国民革命军第255旅" strength = 20 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+	}
+		}
+	}
+	army = {
+		name = "驻赣绥靖公署"
+		location = 5681
+		regiment = { type = hq_brigade name = "驻赣绥靖公署" historical_model = 0 }
+		regiment = { type = militia_brigade name = "国民革命军新编第7旅" strength = 20 historical_model = 0 }
+		corps = {
+			name = "国民革命军第22军"
+			location = 5706
+			regiment = { type = hq_brigade name = "国民革命军第22军司令部" historical_model = 0 }
+			division= {
+				name = "国民革命军第18师"
+				location = 5698
+				regiment = { type = infantry_brigade name = "国民革命军第52旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "国民革命军第54旅" strength = 20 historical_model = 0 }
+					regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			
+			}
+			division= {
+				name = "国民革命军第50师"
+				location = 7524
+				regiment = { type = infantry_brigade name = "国民革命军第148旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "国民革命军第149旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "补充团" strength = 10 historical_model = 0 }
+			}
+		}
+division= {
+			name = "国民革命军第6师"
+			location = 7537
+			leader = 50061
+			regiment = { type = infantry_brigade name = "国民革命军第17旅" experience = 10 strength = 20 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "国民革命军第18旅" experience = 10 strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		}
+		division= {
+			name = "国民革命军第28师"
+			location = 4517
+			regiment = { type = infantry_brigade name = "国民革命军第82旅" strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade name = "国民革命军第84旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		}
+		division= {
+			name = "国民革命军第43师"
+			location = 9266
+			regiment = { type = infantry_brigade name = "国民革命军第43师" experience = 10 strength = 20 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "国民革命军第43师" experience = 10 strength = 20 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "国民革命军第43师" experience = 10 strength = 20 historical_model = 1 }
+		}
+		division= {
+			name = "国民革命军第49师"
+			location = 5177
+			regiment = { type = infantry_brigade name = "国民革命军第49师" experience = 10 strength = 20 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "国民革命军第49师" experience = 10 strength = 20 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "国民革命军第49师" experience = 10 strength = 20 historical_model = 1 }
+		}
+		division= {
+			name = "国民革命军第55师"
+			location = 5684
+			regiment = { type = infantry_brigade name = "国民革命军第163旅" strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade name = "国民革命军第165旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		}
+		
+		division= {
+			name = "国民革命军第61师"
+			location = 5660
+			regiment = { type = infantry_brigade name = "国民革命军第61师" experience = 10 strength = 20 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "国民革命军第61师" experience = 10 strength = 20 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "国民革命军第61师" experience = 10 strength = 20 historical_model = 1 }
+
+		}
+		division= {
+			name = "国民革命军第63师"
+			location = 5684
+			regiment = { type = infantry_brigade name = "国民革命军第187旅" strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade name = "国民革命军第189旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		}
+		division= {
+			name = "国民革命军第77师"
+			location = 7507
+			regiment = { type = infantry_brigade name = "国民革命军第230旅" strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade name = "国民革命军第231旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		}
+		division= {
+			name = "国民革命军第121师"
+			location = 5706
+			regiment = { type = militia_brigade name = "国民革命军第121师" historical_model = 0 }
+			regiment = { type = militia_brigade name = "国民革命军第121师" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		}
+	}
+	armygroup = {
+		name = "浙闽赣皖边区绥靖公署"
+		location = 5651
+		regiment = { type = hq_brigade name = "浙闽赣皖边区绥靖公署" historical_model = 0 }
+		army = {
+			name = "国民革命军第4路军"
+			location = 5651
+			regiment = { type = hq_brigade name = "国民革命军第4路军司令部" historical_model = 0 }
+			corps = {
+				name = "国民革命军第28军"
+				location = 5651
+				regiment = { type = hq_brigade name = "国民革命军第28军司令部" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "补充团" strength = 10 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "补充团" strength = 10 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "补充团" strength = 10 historical_model = 0 }
+				division= {
+					name = "国民革命军第15师"
+					location = 7529
+					regiment = { type = infantry_brigade name = "国民革命军第43旅" strength = 20 historical_model = 0 }
+					regiment = { type = militia_brigade name = "国民革命军第44旅" strength = 20 historical_model = 0 }
+					regiment = { type = infantry_brigade name = "补充团" strength = 10 historical_model = 0 }
+				}
+				division= {
+					name = "国民革命军第16师"
+					location = 5651
+					regiment = { type = infantry_brigade name = "国民革命军第46旅" experience = 5 strength = 20 historical_model = 0 }
+					regiment = { type = militia_brigade name = "国民革命军第47旅" strength = 20 historical_model = 0 }
+					regiment = { type = infantry_brigade name = "补充团" strength = 10 historical_model = 0 }
+				}
+				division= {
+					name = "国民革命军第19师"
+					location = 5675
+					regiment = { type = infantry_brigade name = "国民革命军第55旅" strength = 20 historical_model = 0 }
+					regiment = { type = militia_brigade name = "国民革命军第57旅" strength = 20 historical_model = 0 }
+					regiment = { type = infantry_brigade name = "补充团" strength = 10 historical_model = 0 }
+				}
+				division= {
+					name = "国民革命军第62师"
+					location = 7519
+					regiment = { type = infantry_brigade name = "国民革命军第185旅" historical_model = 0 }
+					regiment = { type = militia_brigade name = "国民革命军第186旅" historical_model = 0 }
+					regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+				}
+			}
+		}
+	}
+	army = {
+		name = "湘鄂赣边区绥靖公署"
+		location = 5706
+		regiment = { type = hq_brigade name = "湘鄂赣边区绥靖公署" historical_model = 0 }
+		corps = {
+			name = "国民革命军第27军"
+			location = 5706
+			regiment = { type = hq_brigade name = "国民革命军第27军司令部" historical_model = 0 }
+			division= {
+				name = "国民革命军第23师"
+				location = 7209
+				regiment = { type = infantry_brigade name = "国民革命军第67旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "国民革命军第69旅" strength = 20 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			}
+		}
+	}
+	division= {
+		name = "豫鄂陕边区绥靖公署"
+		location = 7498
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+	division= {
+		name = "苏浙边区绥靖公署"
+		location = 5621
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+	army = {
+		name = "滇黔绥靖公署"
+		location = 7541
+		regiment = { type = hq_brigade name = "滇黔绥靖公署" historical_model = 1 }
+		division = {
+			name = "国民革命军第4军"
+			location = 7541
+			regiment = { type = infantry_brigade name = "国民革命军第59师" experience = 10 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "国民革命军第90师" historical_model = 0 }
+		}
+		division = {
+			name = "国民革命军第5军"
+			location = 7541
+			regiment = { type = infantry_brigade name = "国民革命军第92师" experience = 10 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "国民革命军第93师" experience = 10 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		}
+		corps = {
+			name = "国民革命军第9军"
+			location = 7535
+			regiment = { type = hq_brigade name = "国民革命军第9军司令部" historical_model = 0 }
+			division= {
+				name = "国民革命军第54师"
+				location = 7535
+				regiment = { type = infantry_brigade name = "国民革命军第161旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "国民革命军第162旅" strength = 20 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			}
+			division= {
+				name = "国民革命军第99师"
+				location = 7535
+				regiment = { type = infantry_brigade name = "国民革命军第295旅" experience = 10 strength = 20 historical_model = 1 }
+				regiment = { type = infantry_brigade name = "国民革命军第297旅" experience = 10 strength = 20 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			}
+		}
+		corps = {
+			name = "国民革命军第43军"
+			location = 7542
+			regiment = { type = hq_brigade name = "国民革命军第43军司令部" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			division= {
+				name = "独立国民革命军第34旅"
+				location = 7535
+				regiment = { type = infantry_brigade name = "独立国民革命军第34旅" experience = 10 historical_model = 1 }
+				regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+				
+			}
+			division= {
+				name = "国民革命军第26师"
+				location = 7535
+				regiment = { type = militia_brigade name = "国民革命军第76旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "国民革命军第78旅" strength = 20 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			}
+		}
+		
+	}
+	army = {
+		name = "国民革命军第11路军"
+		location = 5618
+		regiment = { type = hq_brigade name = "国民革命军第11路军司令部" historical_model = 0 }
+		corps = {
+			name = "国民革命军第15军"
+			location = 5618
+			regiment = { type = hq_brigade name = "国民革命军第15军司令部" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			division= {
+				name = "国民革命军第64师"
+				location = 7499
+				regiment = { type = militia_brigade name = "国民革命军第191旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "国民革命军第192旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "补充团" strength = 10 historical_model = 0 }
+			}
+			division= {
+				name = "国民革命军第65师"
+				location = 5618
+				regiment = { type = militia_brigade name = "国民革命军第194旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "国民革命军第195旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "补充团" strength = 10 historical_model = 0 }
+			}
+		}
+	}
+	army = {
+		name = "国民革命军第26路军"
+		location = 5421
+		regiment = { type = hq_brigade name = "国民革命军第26路军司令部" historical_model = 0 }
+		corps = {
+			name = "国民革命军第30军"
+			location = 5432
+			regiment = { type = hq_brigade name = "国民革命军第30军司令部" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			division= {
+				name = "国民革命军第30师"
+				location = 5432
+				regiment = { type = militia_brigade name = "国民革命军第88旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "国民革命军第89旅" strength = 20 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			}
+			division= {
+				name = "国民革命军第31师"
+				location = 7493
+				regiment = { type = militia_brigade name = "国民革命军第91旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "国民革命军第92旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			}
+		}
+		corps = {
+			name = "国民革命军第62军"
+			location = 5434
+			regiment = { type = hq_brigade name = "国民革命军第62军司令部" historical_model = 0 }
+			regiment = { type = militia_brigade name = "独立国民革命军第44旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			division= {
+				name = "国民革命军第27师"
+				location = 7503
+				leader = 50079
+				regiment = { type = infantry_brigade name = "国民革命军第79旅" strength = 20 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "国民革命军第80旅" strength = 20 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			}
+		}
+		division= {
+			name = "国民革命军第33师"
+			location = 5617
+			regiment = { type = militia_brigade name = "国民革命军第33师" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		}
+	}
+	corps = {
+		name = "国民革命军第13军"
+		location = 5301
+		regiment = { type = hq_brigade name = "国民革命军第13军司令部" historical_model = 1 }
+		regiment = { type = chi_star_destroyer name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		regiment = { type = chi_star_destroyer name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		regiment = { type = chi_star_destroyer name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		division= {
+			name = "国民革命军第4师"
+			location = 5301
+			leader = 50325
+			regiment = { type = chi_star_destroyer name = "国民革命军第10旅" experience = 10 strength = 20 historical_model = 1 }
+			regiment = { type = chi_star_destroyer name = "国民革命军第11旅" experience = 10 strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		}
+		division= {
+			name = "国民革命军第89师"
+			location = 5301
+			leader = 50010
+			regiment = { type =chi_star_destroyer name = "国民革命军第265旅" experience = 10 strength = 20 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "国民革命军第267旅" experience = 10 strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "89师补充团" experience = 10 strength = 20 historical_model = 0 }
+		}
+	}
+	corps = {
+		name = "国民革命军第25军"
+		location = 5177
+		regiment = { type = hq_brigade name = "国民革命军第25军司令部" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "国民革命军第140师" experience = 5 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		division= {
+			name = "国民革命军第13师"
+			location = 5383
+			regiment = { type = infantry_brigade name = "国民革命军第37旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "国民革命军第38旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		}
+		division= {
+			name = "国民革命军第165师"
+			location = 9265
+			regiment = { type = militia_brigade name = "国民革命军第493旅" strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade name = "国民革命军第494旅" strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade name = "国民革命军第495旅" strength = 20 historical_model = 0 }
+			regiment = { type = cavalry_brigade name = "骑兵团" strength = 10 historical_model = 0 }
+		}
+	}
+	corps = {
+		name = "国民革命军第37军"
+		location = 9296
+		regiment = { type = hq_brigade name = "国民革命军第37军司令部" historical_model = 0 }
+		division= {
+			name = "国民革命军第8师"
+			location = 9296
+			regiment = { type = infantry_brigade name = "国民革命军第22旅" historical_model = 0 }
+			regiment = { type = militia_brigade name = "国民革命军第24旅" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		}
+		division= {
+			name = "国民革命军第24师"
+			location = 9296
+			regiment = { type = infantry_brigade name = "国民革命军第70旅" strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade name = "国民革命军第72旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		}
+	}
+	corps = {
+		name = "国民革命军第40军"
+		location = 7467
+		regiment = { type = hq_brigade name = "国民革命军第40军司令部" historical_model = 0 }
+		division= {
+			name = "国民革命军第39师"
+			location = 7467
+			regiment = { type = militia_brigade name = "国民革命军第115旅" historical_model = 0 }
+			regiment = { type = militia_brigade name = "国民革命军第116旅" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		}
+		division= {
+			name = "国民革命军第97师"
+			location = 9170
+			regiment = { type = infantry_brigade name = "国民革命军第97师" experience = 15 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		}
+	}
+	corps = {
+		name = "国民革命军第1军"
+		location = 5435
+		regiment = { type = hq_brigade name = "国民革命军第1军司令部" historical_model = 1 }
+		regiment = { type = infantry_brigade name = "补充团" strength = 10 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "补充团" strength = 10 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "补充团" strength = 10 historical_model = 0 }
+		division= {
+			name = "国民革命军第1师"
+			location = 5435
+			regiment = { type = infantry_brigade name = "国民革命军第1旅" experience = 10 strength = 20 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "国民革命军第2旅" experience = 10 strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "国民革命军第3旅" strength = 10 historical_model = 0 }
+		}
+		division= {
+			name = "国民革命军第78师"
+			location = 5417
+			regiment = { type = infantry_brigade name = "国民革命军第232旅" experience = 10 strength = 20 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "国民革命军第234旅" experience = 10 strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		}
+		division= {
+			name = "国民革命军第167师"
+			location = 5416
+			regiment = { type = militia_brigade name = "国民革命军第500旅" strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade name = "国民革命军第501旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		}
+	}
+	corps = {
+		name = "国民革命军第16军"
+		location = 5848
+		regiment = { type = hq_brigade name = "国民革命军第16军司令部" historical_model = 0 }
+		division= {
+			name = "国民革命军第53师"
+			location = 5848
+			regiment = { type = infantry_brigade name = "国民革命军第157旅" historical_model = 0 }
+			regiment = { type = militia_brigade name= "国民革命军第159旅" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		}
+	}
+	corps = {
+		name = "国民革命军第18军"
+		location = 5765
+		leader = 50219
+		regiment = { type = hq_brigade name = "国民革命军第18军司令部" historical_model = 1 }
+		regiment = { type = chi_star_destroyer name = "18军补充旅" experience = 10 strength = 10 historical_model = 1 }
+		regiment = { type = chi_star_destroyer name = "18军补充旅" experience = 10 strength = 10 historical_model = 1 }
+		regiment = { type = chi_star_destroyer name = "18军补充旅" experience = 10 strength = 10 historical_model = 1 }
+		
+		division= {
+			name = "国民革命军第11师"
+			location = 5765
+			leader = 50135
+			regiment = { type = chi_star_destroyer name = "国民革命军第31旅" experience = 10 strength = 20 historical_model = 1 }
+			regiment = { type = chi_star_destroyer name = "国民革命军第33旅" experience = 10 strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		}
+		division= {
+			name = "国民革命军第14师"
+			location = 7523
+			leader = 50137
+			regiment = { type = chi_star_destroyer name = "国民革命军第40旅" experience = 10 strength = 20 historical_model = 1 }
+			regiment = { type = chi_star_destroyer name = "国民革命军第42旅" experience = 10 strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		}
+		division= {
+			name = "国民革命军第67师"
+			location = 5765
+			
+			regiment = { type = chi_star_destroyer name = "国民革命军第199旅" experience = 10 strength = 20 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "国民革命军第201旅" experience = 10 strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		}
+		division= {
+		name = "国民革命军第94师"
+		location = 7425
+		leader = 50064
+		regiment = { type = infantry_brigade name = "国民革命军第280旅" experience = 10 strength = 20 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "国民革命军第282旅" experience = 10 strength = 20 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+	}
+	}
+	corps = {
+		name = "国民革命军第39军"
+		location = 5621
+		regiment = { type = hq_brigade name = "国民革命军第39军司令部" historical_model = 0 }
+		regiment = { type = militia_brigade name = "独立国民革命军第45旅" strength = 20 historical_model = 0 }
+		division= {
+			name = "国民革命军第56师"
+			location = 5621
+			regiment = { type = infantry_brigade name = "国民革命军第167旅" historical_model = 0 }
+			regiment = { type = militia_brigade name = "国民革命军第168旅" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		}
+	}
+	corps = {
+		name = "国民革命军第26军"
+		location = 5472
+		regiment = { type = hq_brigade name = "国民革命军第26军司令部" historical_model = 0 }
+		regiment = { type = militia_brigade name = "独立国民革命军第4旅" strength = 20 historical_model = 0 }
+		division= {
+			name = "国民革命军第32师"
+			location = 5594
+			regiment = { type = militia_brigade name = "国民革命军第94旅" strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade name = "国民革命军第95旅" strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade name = "补充团" strength = 10 historical_model = 0 }
+		}
+		division= {
+			name = "国民革命军第44师"
+			location = 5472
+			regiment = { type = infantry_brigade name = "国民革命军第130旅" strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade name = "国民革命军第131旅" strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade name = "补充团" strength = 10 historical_model = 0 }
+		}
+	}
+	division= {
+		name = "国民革命军第36军"
+		location = 5848
+		regiment = { type = infantry_brigade name = "独立国民革命军第36旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "国民革命军第5师" historical_model = 0 }
+		regiment = { type = militia_brigade name = "国民革命军第96师" historical_model = 0 }
+	}
+	division= {
+		name = "国民革命军第102师"
+		location = 5661
+		regiment = { type = militia_brigade name = "国民革命军第304旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "国民革命军第306旅" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+	}
+	division= {
+		name = "国民革命军第82师"
+		location = 7503
+		regiment = { type = infantry_brigade name = "国民革命军第82师" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+	}
+	
+	
+	division= {
+		name = "国民革命军第60师"
+		location = 7508
+		regiment = { type = infantry_brigade name = "国民革命军第60师" experience = 10 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "补充团" experience = 10 strength = 10 historical_model = 0 }
+	}
+	division= {
+		name = "新编国民革命军第8师"
+		location = 7511
+		regiment = { type = militia_brigade name = "新编国民革命军第8师" historical_model = 0 }
+	}
+	division= {
+		name = "新编国民革命军第34师"
+		location = 5707
+		regiment = { type = militia_brigade name = "国民革命军第1旅" strength = 20 historical_model = 0 }
+		regiment = { type = militia_brigade name = "国民革命军第2旅" strength = 20 historical_model = 0 }
+	}
+	division= {
+		name = "独立国民革命军第32旅"
+		location = 7520
+		regiment = { type = infantry_brigade name = "独立国民革命军第32旅" strength = 20 historical_model = 0 }
+	}
+	division= {
+		name = "独立国民革命军第35旅"
+		location = 7498
+		regiment = { type = infantry_brigade name = "独立国民革命军第35旅" experience = 10 strength = 20 historical_model = 1 }
+	}
+	division= {
+		name = "独立国民革命军第37旅"
+		location = 5623
+		regiment = { type = infantry_brigade name = "独立国民革命军第37旅" experience = 10 strength = 20 historical_model = 1 }
+	}
+	division= {
+		name = "新编国民革命军第3旅"
+		location = 7507
+		regiment = { type = infantry_brigade name = "新编国民革命军第3旅" strength = 20 historical_model = 0 }
+	}
+	division= {
+		name = "暂编国民革命军第11旅"
+		location = 5675
+		regiment = { type = infantry_brigade name = "暂编国民革命军第11旅" strength = 20 historical_model = 0 }
+	}
+	division= {
+		name = "暂编国民革命军第12旅"
+		location = 5621
+		regiment = { type = infantry_brigade name = "暂编国民革命军第12旅" strength = 20 historical_model = 0 }
+	}
+	corps = {
+		name = "国民革命军第46军"
+		location = 7209
+		regiment = { type = hq_brigade name = "国民革命军第46军司令部" historical_model = 0 }
+		division= {
+			name = "国民革命军第79师"
+			location = 7209
+			regiment = { type = militia_brigade name = "国民革命军第235旅" strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade name = "国民革命军第237旅" strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade name = "补充团" strength = 10 historical_model = 0 }
+		}
+	}
+	division= {
+		name = "国民革命军第98师"
+		location = 7508
+		regiment = { type = militia_brigade name = "国民革命军第292旅" strength = 20 historical_model = 0 }
+		regiment = { type = militia_brigade name = "国民革命军第294旅" strength = 20 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "补充团" experience = 0 strength = 5 historical_model = 0 }
+	}
+	division= {
+		name = "暂编国民革命军第5旅"
+		location = 5848
+		regiment = { type = militia_brigade name = "暂编国民革命军第5旅" strength = 20 historical_model = 0 }
+	}
+	
+	division= {
+		name = "独立国民革命军第6旅"
+		location = 5711
+		regiment = { type = infantry_brigade name = "独立国民革命军第6旅" strength = 20 historical_model = 0 }
+	}
+	
+
+
+division = {
+		name = "东北抗日联军第1军"
+		location =  7508
+		leader = 76348
+		regiment = { type = partisan_bergsjaeger experience = 100 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger experience = 100 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  experience = 100 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  experience = 90 historical_model = 0 }
+}
+division = {
+		name = "东北抗日联军第2军"
+		location =  7508
+		leader = 76311
+		regiment = { type = partisan_bergsjaeger  experience = 20 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  experience = 20 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  experience = 20 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  experience = 20 historical_model = 0 }
+}
+division = {
+		name = "东北抗日联军第3军第1纵队"
+		location =  7508
+		leader = 76305
+		regiment = { type = partisan_bergsjaeger experience = 30 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger experience = 30 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  experience = 30 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  experience = 30 historical_model = 0 }
+}
+division = {
+		name = "东北抗日联军第3军第2纵队"
+		location =  7508
+		leader = 76306
+		regiment = { type = partisan_bergsjaeger experience = 30 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger experience = 30 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger experience = 30 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger experience = 30 historical_model = 0 }
+}
+division = {
+		name = "东北抗日联军第3军第3纵队"
+		location =  7508
+		leader = 76345
+		regiment = { type = partisan_bergsjaeger experience = 20 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger experience = 20 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger experience = 20 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger experience = 20 historical_model = 0 }
+}
+division = {
+		name = "东北抗日联军第4军"
+		location =  7508
+		leader = 76371
+		regiment = { type = partisan_bergsjaeger  experience = 20 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  experience = 20 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  experience = 20 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  experience = 20 historical_model = 0 }
+}
+division = {
+		name = "东北抗日联军第5军"
+		location =  7508
+		leader = 76372
+		regiment = { type = partisan_bergsjaeger  experience = 20 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  experience = 20 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  experience = 20 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  experience = 20 historical_model = 0 }
+}
+division = {
+		name = "东北抗日联军第6军"
+		location =  7508
+		leader = 76302
+		regiment = { type = partisan_bergsjaeger  experience = 20 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  experience = 20 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  experience = 20 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  experience = 20 historical_model = 0 }
+}
+division = {
+		name = "东北抗日联军第7军"
+		location =  7508
+		leader = 76300
+		regiment = { type = partisan_bergsjaeger  experience = 20 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  experience = 20 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  experience = 20 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  experience = 20 historical_model = 0 }
+}
+division = {
+		name = "东北抗日联军第8军"
+		location =  7508
+		leader = 76352
+		regiment = { type = partisan_bergsjaeger  historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  historical_model = 0 }
+}
+division = {
+		name = "东北抗日联军第9军"
+		location =  7508
+		leader = 76349
+		regiment = { type = partisan_bergsjaeger  historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  historical_model = 0 }
+}
+division = {
+		name = "东北抗日联军第10军"
+		location =  7508
+		leader = 76347
+		regiment = { type = partisan_bergsjaeger  experience = 20 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  experience = 20 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  experience = 20 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger  experience = 20 historical_model = 0 }
+}
+division = {
+		name = "东北抗日联军第11军"
+		location =  7508
+		leader = 76346
+		regiment = { type = partisan_bergsjaeger experience = 20 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger experience = 20 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger experience = 20 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger experience = 20 historical_model = 0 }
+}
+
+
+
+division = {
+       name = "国民革命军第x师"
+       location = 5541
+       regiment = { type = chi_star_destroyer name = "独立团" experience = 35 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = chi_star_destroyer name = "独立团" experience = 35 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = infantry_brigade name = "x师补充团" experience = 25 strength = 20 builder = GER historical_model = 1 }
+}
+
+division = {
+       name = "国民革命军第x师"
+       location = 5541
+       regiment = { type = chi_star_destroyer name = "独立团" experience = 35 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = chi_star_destroyer name = "独立团" experience = 35 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = infantry_brigade name = "x师补充团" experience = 25 strength = 20 builder = GER historical_model = 1 }
+}
+division = {
+       name = "国民革命军第x师"
+       location = 5541
+       regiment = { type = chi_star_destroyer name = "独立团" experience = 35 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = chi_star_destroyer name = "独立团" experience = 35 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = infantry_brigade name = "x师补充团" experience = 25 strength = 20 builder = GER historical_model = 1 }
+}
+division = {
+       name = "国民革命军第x师"
+       location = 5541
+       regiment = { type = chi_star_destroyer name = "独立团" experience = 35 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = chi_star_destroyer name = "独立团" experience = 35 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = infantry_brigade name = "x师补充团" experience = 25 strength = 20 builder = GER historical_model = 1 }
+}
+division = {
+       name = "国民革命军第x师"
+       location = 5541
+       regiment = { type = chi_star_destroyer name = "独立团" experience = 35 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = chi_star_destroyer name = "独立团" experience = 35 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = infantry_brigade name = "x师补充团" experience = 25 strength = 20 builder = GER historical_model = 1 }
+}
+division = {
+       name = "国民革命军第x师"
+       location = 5541
+       regiment = { type = chi_star_destroyer name = "独立团" experience = 35 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = chi_star_destroyer name = "独立团" experience = 35 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = infantry_brigade name = "x师补充团" experience = 25 strength = 20 builder = GER historical_model = 1 }
+}
+division = {
+       name = "国民革命军第x师"
+       location = 5541
+       regiment = { type = chi_star_destroyer name = "独立团" experience = 35 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = chi_star_destroyer name = "独立团" experience = 35 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = infantry_brigade name = "x师补充团" experience = 25 strength = 20 builder = GER historical_model = 1 }
+}
+division = {
+       name = "国民革命军第x师"
+       location = 5541
+       regiment = { type = chi_star_destroyer name = "独立团" experience = 35 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = chi_star_destroyer name = "独立团" experience = 35 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = infantry_brigade name = "x师补充团" experience = 25 strength = 20 builder = GER historical_model = 1 }
+}
+division = {
+       name = "国民革命军第x师"
+       location = 5541
+       regiment = { type = chi_star_destroyer name = "独立团" experience = 35 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = chi_star_destroyer name = "独立团" experience = 35 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = infantry_brigade name = "x师补充团" experience = 25 strength = 20 builder = GER historical_model = 1 }
+}
+division = {
+       name = "国民革命军第x师"
+       location = 5541
+       regiment = { type = chi_star_destroyer name = "独立团" experience = 35 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = chi_star_destroyer name = "独立团" experience = 35 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = infantry_brigade name = "x师补充团" experience = 25 strength = 20 builder = GER historical_model = 1 }
+}
+division = {
+       name = "国民革命军第x师"
+       location = 5541
+       regiment = { type = chi_star_destroyer name = "独立团" experience = 35 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = chi_star_destroyer name = "独立团" experience = 35 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = infantry_brigade name = "x师补充团" experience = 25 strength = 20 builder = GER historical_model = 1 }
+}
+
+
+navy = {
+		name = "国民革命军第1舰队"
+		base = 5542
+		location = 5542
+		ship = { type = light_cruiser name = "宁海" historical_model = 0 }
+		ship = { type = light_cruiser name = "海容" historical_model = 0 }
+		ship = { type = light_cruiser name = "海筹" historical_model = 0 }
+		ship = { type = light_cruiser name = "海圻" historical_model = 0 }
+		ship = { type = transport_ship name = "国民革命军第1运输大队" historical_model = 0 }
+	}
+	navy = {
+		name = "国民革命军第2舰队"
+		base = 5542
+		location = 5542
+		ship = { type = light_cruiser name = "应瑞" historical_model = 0 }
+		ship = { type = light_cruiser name = "肇和" historical_model = 0 }
+		ship = { type = light_cruiser name = "海琛" historical_model = 0 }
+		ship = { type = light_cruiser name = "通济" historical_model = 0 }
+		ship = { type = destroyer name = "国民革命军第1驱逐舰大队" historical_model = 0 }
+		ship = { type = destroyer name = "国民革命军第2驱逐舰大队" historical_model = 0 }
+	}
+	air = {
+		name = "国民革命军第1航空军"
+		base = 5681
+		location = 5681
+		wing = { type = tactical_bomber name = "国民革命军第1航空军" historical_model = 0 }
+	}
+	air = {
+		name = "国民革命军第2航空军"
+		base = 5681
+		location = 5681
+		wing = { type = interceptor name = "国民革命军第2航空军" historical_model = 0 }
+	}
+}
+military_construction = {
+	country = CHI
+	light_cruiser = {
+		name = "平海"
+		historical_model = 0
+	}
+	cost = 7.8
+	progress = 0
+	duration = 170
+}

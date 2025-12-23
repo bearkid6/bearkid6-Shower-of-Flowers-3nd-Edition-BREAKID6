@@ -1,0 +1,16 @@
+owner = CSD
+
+controller = CSD
+
+
+add_core = CHC
+add_core = CSD
+add_core = CHI
+infra = 4
+naval_base = 4
+1938.5.9 = {
+
+	controller = JAP
+
+}
+

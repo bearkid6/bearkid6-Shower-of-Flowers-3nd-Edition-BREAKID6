@@ -1,0 +1,151 @@
+﻿####################
+#   大生产事件组   #
+####################
+#封锁陕甘宁
+country_event = {
+	id = 289998
+	trigger = {
+		tag = CHI
+		not = { has_country_flag = Event289998 }
+		year = 1939
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	title = "封锁陕甘宁边区"
+	desc = "CHC_EVENT289998_desc"
+	option = {
+		name = "封锁"
+		add_country_modifier = {
+			name = "Event289998_modifier"
+			duration = 365
+		}
+                CHC = { country_event = 3000 }
+		set_country_flag = Event289998
+	}
+}
+country_event = {
+	id = 3000
+       	is_triggered_only = yes
+	title = "国民政府封锁陕甘宁边区"
+	desc = "国民政府开始了对陕甘宁边区的封锁，我们的处境将更为艰难"
+	picture = "Event3000"
+	option = {
+		name = "自己动手，丰衣足食"
+                national_unity = 5
+	}
+}
+#召开陕甘宁边区参议会
+country_event = {
+	id = 289997
+	trigger = {
+		tag = CHC
+		not = { has_country_flag = Event289997 }
+		year = 1939
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	title = "召开陕甘宁边区参议会"
+	desc = "CHC_EVENT289997_desc"
+	option = {
+		name = "召开"	
+	        national_unity = 5
+		set_country_flag = Event289997
+	}
+}
+#发展生产，自力更生
+country_event = {
+	id = 289999
+	trigger = {
+		tag = CHC
+                has_country_flag = Event289998
+		not = { has_country_flag = Event289999 }
+		year = 1939
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	title = "CHC_EVENT289999_title"
+	desc = "CHC_EVENT289999_desc"
+	option = {
+		name = "CHC_EVENT289999_option"
+		add_country_modifier = {
+			name = "Event289999_modifier"
+			duration = 365
+		}
+		set_country_flag = Event289999
+	}
+}
+
+#三年饥荒
+country_event = {
+	id = 290000
+	trigger = {
+		tag = CHC
+		year = 1940
+		not = { has_country_flag = Event290000 }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	title = "CHC_EVENT290000_title"
+	desc = "CHC_EVENT290000_desc"
+	option = {
+		name = "CHC_EVENT290000_option"
+		add_country_modifier = {
+			name = "Event290000_modifier"
+			duration = 1095
+		}
+		set_country_flag = Event290000
+	}
+}
+
+#大生产运动
+country_event = {
+	id = 290003
+	trigger = {
+		tag = CHC
+		has_country_modifier = Event290000_modifier
+		not = { has_country_flag = Event290003 }
+		year = 1941
+	}
+	mean_time_to_happen = {
+		months = 3
+	}
+	title = "CHC_EVENT290003_title"
+	desc = "CHC_EVENT290003_desc"
+	option = {
+		name = "CHC_EVENT290003_option"
+		add_country_modifier = {
+			name = "Event290003_modifier"
+			duration = 1460
+		}
+		remove_country_modifier = Event290000_modifier
+		set_country_flag = Event290003
+	}
+}
+
+#南泥湾
+country_event = {
+	id = 290004
+	trigger = {
+		tag = CHC
+		not = { has_country_flag = Event290004 }
+		CHC = { controls = 7417 }
+		and = {
+			year = 1941
+			month = 3
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	title = "CHC_EVENT290004_title"
+	desc = "CHC_EVENT290004_desc"
+	option = {
+		name = "CHC_EVENT290004_option"
+		set_country_flag = Event290004
+		7417 = { strategic_resource = black_soil }
+	}
+}

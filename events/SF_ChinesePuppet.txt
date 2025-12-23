@@ -1,0 +1,139 @@
+######################
+#   汪伪政权事件组   #
+######################
+#汪精卫叛逃
+country_event = {
+	id = 1000004
+	title = "wangjingwei_defect"
+	desc = "wangjingwei_defect_desc"
+	picture = "CHI_event_1000004"
+	trigger = {
+		tag = CHI
+		war_with = JAP
+		not = { has_global_flag = wangjingwei_message }
+		not = { controls = 5494 }
+	}
+	mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "wangjingwei_defect_option"
+		remove_minister = 52025
+		set_global_flag = wangjingwei_message
+		ai_chance = { factor = 100 }
+	}
+}
+#汪伪政权建立-CHIandCHC
+country_event = {
+	id = 1000005
+	title = "wangweizf_built"
+	desc = "wangweizf_built_desc_chi"
+	picture = "WJW_Flag"
+	mean_time_to_happen =  {
+		days = 1
+	}
+	trigger = {
+		tag = CHI
+		war_with = JAP
+		not = { has_country_flag = CHI_event_1000005 }
+		has_global_flag = wangweizf
+		exists = WJW
+	}
+	option = {
+		name = "wangweizf_built_option_chi"
+		national_unity = 5
+		remove_minister = 52085
+		remove_minister = 52059
+		remove_minister = 52074
+		set_country_flag = CHI_event_1000005
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000006
+	title = "wangweizf_built"
+	desc = "wangweizf_built_desc_chc"
+	picture = "WJW_Flag"
+	mean_time_to_happen =  {
+		days = 1
+	}
+	trigger = {
+		tag = CHC
+		war_with = JAP
+		not = { has_country_flag = CHC_event_1000006 }
+		has_global_flag = wangweizf
+		exists = WJW
+	}
+	option = {
+		name = "wangweizf_built_option_chc"
+		set_country_flag = CHC_event_1000006
+		ai_chance = { factor = 100 }
+	}
+}
+#部分国民党军政要员变节投降
+country_event = {
+	id = 1000007
+	title = "CHI_event_1000007_title"
+	desc = "CHI_event_1000007_desc"
+	picture = "CHI_Event_1000007"
+	mean_time_to_happen =  {
+		days = 1
+	}
+	trigger = {
+		tag = CHI
+		war_with = JAP
+		not = { has_country_flag = CHI_event_1000007 }
+		has_global_flag = wangweizf
+		exists = WJW
+	}
+	option = {
+		name = "CHI_event_1000007_option"
+		national_unity = 10
+		manpower = -350
+		WJW = { load_oob = "WJW_ChiangKaiShek_Transport_1.txt"}
+		set_country_flag = CHI_event_1000007
+		ai_chance = { factor = 100 }
+	}
+}
+#CJD嗝屁
+country_event = {
+	id = 1000034
+	is_triggered_only = yes
+	title = "CJD_Event_1000034"
+	desc = "CJD_Event_1000034_desc"
+	picture = "CHB_Event_1000035"
+	option = {
+		name = "CJD_Event_1000034_option"
+		ai_chance = { factor = 100 }
+		CHB = { split_troops = 1.00 }
+		CHB = { inherit = CJD }
+	}
+}
+#CHB嗝屁
+country_event = {
+	id = 1000035
+	is_triggered_only = yes
+	title = "CHB_Event_1000035"
+	desc = "CHB_Event_1000035_desc"
+	picture = "CHB_Event_1000035"
+	option = {
+		name = "CHB_Event_1000035_option"
+		ai_chance = { factor = 100 }
+		WJW = { split_troops = 1.00 }
+		WJW = { inherit = CHB }
+	}
+}
+#CJS嗝屁
+country_event = {
+	id = 1000036
+	is_triggered_only = yes
+	title = "CJS_Event_1000036"
+	desc = "CJS_Event_1000036_desc"
+	picture = "CJS_Event_1000036"
+	option = {
+		name = "CJS_Event_1000036_option"
+		ai_chance = { factor = 100 }
+		WJW = { split_troops = 1.00 }
+		WJW = { inherit = CJS }
+	}
+}

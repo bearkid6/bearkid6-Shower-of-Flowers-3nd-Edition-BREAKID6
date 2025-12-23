@@ -1,0 +1,38 @@
+####################
+#   野战军事件组   #
+####################
+country_event = {
+	id = 6666
+	is_triggered_only = yes
+	title = "6666title"
+	desc = "6666desc"
+	picture = "Event1000024"
+	option = {
+		name = "太好了"
+                load_oob = "CHC_third_army.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 6667
+	is_triggered_only = yes
+	title = "6667title"
+	desc = "6667desc"
+	picture = "Event1000024"
+	option = {
+		name = "太好了"
+                load_oob = "CHC_fourth_army.txt"
+		ai_chance = { factor = 100 }
+	}
+country_event = {
+	id = 6668
+	is_triggered_only = yes
+	title = "6668title"
+	desc = "6668desc"
+	picture = "Event1000024"
+	option = {
+		name = "太好了"
+                load_oob = "CHC_frist_army.txt"
+		ai_chance = { factor = 100 }
+	}
+}}

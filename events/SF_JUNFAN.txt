@@ -1,0 +1,517 @@
+
+#####################
+#  军阀新闻事件组   #
+#####################
+#鲁军
+country_event = {
+	id = 3000083
+	title = "吸引山东的韩复渠投靠我们"
+	desc = "为了推进华北五省自治，我们可以让韩复榘加入我们的阵营。"
+	picture = "Event3000083"
+	trigger = {
+		tag = JAP		
+		date = 1936.11.1
+                not = { has_country_flag = Event3000083 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "一定要争取他"
+		set_country_flag = Event3000083
+		CSD = { country_event = 3000084 }
+		ai_chance = { factor = 100 }
+       	}
+	option = {
+		name = "不需要"
+		set_country_flag = Event3000083
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 3000084
+       	is_triggered_only = yes
+	title = "来自日本的邀请"
+	desc = "司令，我们是否要联合日本人反蒋"
+	picture = "Event1100101"
+	option = {
+		name = "合作"
+		load_oob = "CSD_JAPsupportA.txt"
+		CSD = { war = { target = CHI } }
+		ai_chance = { factor = 10 }
+        }
+        option = {
+		name = "谁也别想染指我的山东"
+		relation = { who = JAP value = -100 }
+		ai_chance = { factor = 90 }
+	}
+}
+#绥远
+country_event = {
+	id = 3000085
+	title = "吸引绥远的傅作义投靠我们"
+	desc = "为了推进华北五省自治，我们可以让傅作义加入我们的阵营。"
+	picture = "Event3000083"
+	trigger = {
+		tag = JAP
+		date = 1936.6.1
+                not = { has_country_flag = Event3000085 }
+	}
+          mean_time_to_happen =  {
+		days = 1
+        }
+	option = {
+		name = "一定要争取他"
+		set_country_flag = Event3000085
+		CSY = { country_event = 3000086 }
+		ai_chance = { factor = 100 }
+      	}
+	option = {
+		name = "我们不可能争取到傅作义"
+		set_country_flag = Event3000085
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 3000086
+       	is_triggered_only = yes
+	title = "来自日本的邀请"
+	desc = "Event_3000086decs"
+	picture = "Event1100101"
+	option = {
+		name = "合作"
+		load_oob = "CSY_JAPsupportA.txt"
+		CSY = { war = { target = CHI } }
+                create_alliance = JAP
+                JAP = { guarantee = CSY }
+		ai_chance = { factor = 0 }
+        }
+        option = {
+		name = "守土抗战，寸土不让！"
+		relation = { who = JAP value = -100 }
+		ai_chance = { factor = 100 }
+	}
+}
+#晋系
+country_event = {
+	id = 3000087
+	title = "吸引山西的阎锡山投靠我们"
+	desc = "阎锡山在中国是全国皆知的亲日派，我们可以争取他加入我们，以推进华北五省自治。"
+	picture = "Event3000083"
+	trigger = {
+		tag = JAP	
+		date = 1936.7.1
+                not = { has_country_flag = Event3000087 }
+	}
+          mean_time_to_happen =  {
+		days = 1
+        }
+	option = {
+		name = "一定要争取他"
+		set_country_flag = Event3000087
+		CSX = { country_event = 3000088 }
+		ai_chance = { factor = 100 }
+    	}
+	option = {
+		name = "阎锡山？他有什么用？"
+		set_country_flag = Event3000087
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 3000088
+       	is_triggered_only = yes
+	title = "来自日本的邀请"
+	desc = "Event_3000086decs"
+	picture = "Event1100101"
+	option = {
+		name = "合作"
+		load_oob = "CSX_JAPsupportA.txt"
+		CSX = { war = { target = CHI } }
+                create_alliance = JAP
+                JAP = { guarantee = CSY }
+		ai_chance = { factor = 0 }
+        }
+        option = {
+		name = "投敌叛国，最为可耻!"
+		relation = { who = JAP value = -100 }
+		ai_chance = { factor = 100 }
+	}
+}
+#西北军
+country_event = {
+	id = 3000089
+	title = "吸引河北的宋哲元投靠我们"
+	desc = "我们可以争取宋哲元加入我们，以推进华北五省自治。"
+	picture = "Event3000089"
+	trigger = {
+		tag = JAP
+		date = 1936.8.1
+                not = { has_country_flag = Event3000089 }
+	}
+          mean_time_to_happen =  {
+		days = 1
+        }
+	option = {
+		name = "一定要争取他"
+		set_country_flag = Event3000089
+		CJC = { country_event = 3000090 }
+		ai_chance = { factor = 100 }
+       	}
+	option = {
+		name = "算了吧"
+		set_country_flag = Event3000089
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 3000090
+       	is_triggered_only = yes
+	title = "来自日本的邀请"
+	desc = "Event_3000089decs"
+	picture = "Event1100101"	
+	option = {
+		name = "合作"
+		load_oob = "CJC_JAPsupportA.txt"
+		CJC = { war = { target = CHI } }
+                create_alliance = JAP
+                JAP = { guarantee = CSY }
+		ai_chance = { factor = 0 }
+        }
+        option = {
+		name = "去他娘的小日本"
+		relation = { who = JAP value = -100 }
+		ai_chance = { factor = 100 }
+	}
+}
+#各军阀事件 晋系
+country_event = {
+	id = 3000091
+	title = "建立防共间谍网"
+	desc = "Event_3000091decs"
+	picture = "Event3000089"
+	trigger = {
+		tag = CSX
+                has_country_flag = Eask_csx
+                date = 1936.3.1 
+		not = { has_country_flag = Event3000091 }	
+	}
+        mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "宁可错杀一万"
+		set_country_flag = Event3000091
+                relation = { who = CHC value = -50 }
+                dissent = 5
+                national_unity = -5
+                countr_event= 3000092
+		ai_chance = { factor = 100 }
+        }
+	option = {
+		name = "我不亡于共，亦要亡于蒋"
+                national_unity = 5
+                relation = { who = CHI value = -50 }
+                threat = { who = CHI value = 50 }
+		set_country_flag = Event3000089
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 3000092
+       	is_triggered_only = yes
+	title = "设立赏罚制度"
+	desc = "Event_3000092decs"
+	picture = "Event1100101"
+	option = {
+		name = "让共产党滚出山西"
+		load_oob = "CSXtwt.txt"
+	        money = -500
+                threat = { who = CHC value = 50 }
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 3000093
+	title = "停止防共网络建设"
+	desc = "Event_3000093decs"
+	picture = "Event3000089"
+	trigger = {
+		tag = CSX
+                has_country_flag = Event3000091
+		not = { has_country_flag = Event3000093 }
+                not = { has_country_flag = herro3000093 }
+		date = 1936.5.1
+	}
+        mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "宁可错杀一万"
+		set_country_flag = Event3000093
+                relation = { who = CHC value = -50 }
+                dissent = 50
+                national_unity = -50
+                CHC = { countr_event= 400000 }
+		ai_chance = { factor = 0 }
+      	}
+	option = {
+		name = "还是联合共产党吧"
+                national_unity = 5
+                manpower = -10
+                dissent = -10
+                CHC = { countr_event= 400001 }
+                relation = { who = CHC value = 50 }
+                threat = { who = CHC value = -50 }
+		set_country_flag = Event3000093
+                set_country_flag = herro3000093
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 400000
+       	is_triggered_only = yes
+	title = "进军山西"
+	desc = "阎锡山在山西的暴政不得民心，我们要解放山西。"
+	picture = "Event1100101"
+	option = {
+		name = "出征"
+		load_oob = "CHCEA.txt"
+	        national_unity = 5
+                manpower = -10
+                dissent = -10
+                threat = { who = CSX value = 50 }
+		CHI = { war = { target = CSX } }
+                CSX = { country_event = 3000096 }
+	}
+}
+country_event = {
+	id = 3000096
+       	is_triggered_only = yes
+	title = "共匪再次进犯山西"
+	desc = "把共匪打回家去，保卫山西！"
+	picture = "Event1100101"
+	option = {
+		name = "打"
+	        national_unity = -15
+                manpower = -10
+                dissent = 10
+	}
+}
+country_event = {
+	id = 400001
+       	is_triggered_only = yes
+	title = "阎锡山的合作邀请"
+	desc = "阎锡山终究还是有识之士，我们要联合他。"
+	picture = "Event1100101"
+	option = {
+		name = "致信阎锡山"
+	        national_unity = 5
+                relation = { who = CSX value = 50 }
+                CSX = { country_event = 3000097 }
+	}
+}
+country_event = {
+	id = 3000097
+       	is_triggered_only = yes
+	title = "毛泽东的信"
+	desc = "Event3000097_decs"
+	picture = "Event1100101"
+	option = {
+		name = "守土抗战"
+	        national_unity = 5
+                relation = { who = CSX value = 50 }
+                CSX = { country_event = 3000098 }
+	}
+}
+country_event = {
+	id = 3000098
+	title = "成立牺牲救国同盟会"
+	desc = "Event_3000098decs"
+	picture = "Event3000089"
+	trigger = {
+		tag = CSX
+                has_country_flag = Event3000093 
+                has_country_flag = herro3000093
+                date = 1936.9.1 
+		not = { has_country_flag = Event3000098 }		
+	}
+        mean_time_to_happen =  {
+		days = 1
+        }
+	option = {
+		name = "Event_3000098option"
+		set_country_flag = Event3000098
+                relation = { who = CHC value = 50 }
+                dissent = -5
+                national_unity = 10
+		ai_chance = { factor = 100 }
+        }
+	option = {
+		name = "没必要"
+                national_unity = -50
+                dissent = 50 
+                relation = { who = CHC value = 50 }
+                threat = { who = CHI value = 50 }
+		set_country_flag = Event3000098
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 400002
+       	is_triggered_only = yes
+	title = "国民党反动派联合晋军进攻"
+	desc = "一切反动派都是纸老虎，把他们赶出陕北！"
+	picture = "Event1100101"
+	option = {
+		name = "为了人民"
+	        national_unity = 5
+                load_oob = "CHCWEA.txt"
+                relation = { who = CSX value = -50 }
+	}
+}
+country_event = {
+	id = 3000094
+	title = "电令阎锡山，出兵陕北"
+	desc = "攘外必先安内，统一方能御侮"
+	picture = "Event3000089"
+	trigger = {
+		tag = CSX
+                has_country_flag = Eask_csx 
+                date = 1936.6.1
+		not = { has_country_flag = Event3000094 }		
+	}
+        mean_time_to_happen =  {
+		days = 1
+        }
+	option = {
+		name = "电令阎锡山出兵剿共"
+		set_country_flag = Event3000094
+                relation = { who = CSX value = 10 }
+                dissent = 5
+                national_unity = -5
+                CSC = { countr_event= 3000095 }
+		ai_chance = { factor = 100 }
+       	}
+	option = {
+		name = "算了吧"
+                relation = { who = CHI value = -50 }
+                threat = { who = CHI value = 50 }
+		set_country_flag = Event3000089
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 3000095
+        is_triggered_only = yes
+	title = "中央命令"
+	desc = "蒋介石让我们出兵陕北"
+	picture = "Event1100101"
+	option = {
+		name = "出兵"		
+	        money = -500
+                national_unity = -10
+                manpower = -10
+                dissent = 20
+                threat = { who = CHC value = 50 }
+                relation = { who = CHI value = 50 }
+                CSX = { war = { target = CHC } }
+                create_alliance = CHI
+		ai_chance = { factor = 0 }
+        }
+	option = {
+		name = "我不亡于共，亦要亡于蒋"
+                relation = { who = CHI value = -50 }
+                threat = { who = CHI value = 50 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 3000099
+	title = "向中央请求增援绥远"
+	desc = "Event3000099decs"
+	picture = "Event3000089"
+	trigger = {
+		tag = CSX
+                has_country_flag = Sattack_MEA 
+                date = 1936.11.15
+		not = { has_country_flag = Event3000099 }		
+	}
+        mean_time_to_happen =  {
+		days = 1
+        }
+	option = {
+		name = "请求中央出兵绥远"
+		set_country_flag = Event3000099
+                relation = { who = CSY value = 100 }
+                dissent = -5
+                national_unity = 5
+                CHI = { countr_event= 500000 }
+		ai_chance = { factor = 100 }
+       	}
+	option = {
+		name = "算了吧，让傅作义自己解决吧"
+                relation = { who = CSY value = -50 }
+                dissent = 50
+                national_unity = -50
+		set_country_flag = Event3000099
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 500000
+        is_triggered_only = yes
+	title = "晋绥军的请求"
+	desc = "Event500000decs"
+	picture = "Event1100101"
+	option = {
+		name = "出兵"		
+	        money = -500
+                national_unity = 10
+                manpower = -10
+                dissent = -10
+                relation = { who = CSX value = 50 }
+                CSX = { war = { target = CHC } }
+                create_alliance = CSX
+		ai_chance = { factor = 0 }
+        }
+	option = {
+		name = "剿共已剩最后五分钟，绥远的战事让傅作义自己解决吧"
+                national_unity = -20
+                dissent = 20
+                relation = { who = CSY value = -50 }
+                relation = { who = CSX value = -50 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 3000000
+	title = "暗杀投蒋将领"
+	desc = "Event3000000decs"
+	picture = "Event3000089"
+	trigger = {
+		tag = CSX
+                has_country_flag = Sattack_MEA 
+                date = 1936.3.1
+		not = { has_country_flag = Event300000 }		
+	}
+        mean_time_to_happen =  {
+		days = 1
+        }
+	option = {
+		name = "杀了他们"
+		set_country_flag = Event3000000
+                relation = { who = CHI value = -100 }
+                dissent = 5
+                national_unity = 5
+		ai_chance = { factor = 100 }
+       	}
+	option = {
+		name = "算了吧"
+                relation = { who = CHI value = 50 }
+                dissent = 10
+                national_unity = -5
+		set_country_flag = Event5000000
+		ai_chance = { factor = 0 }
+	}
+}

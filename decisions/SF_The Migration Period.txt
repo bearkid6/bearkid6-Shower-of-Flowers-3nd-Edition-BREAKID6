@@ -1,0 +1,101 @@
+####################
+#   大迁徙议决组   #
+####################
+#工业内迁·第一阶段1937——1938
+diplomatic_decisions = {
+   Migration_Period_chi = {            
+		potential = {
+			tag = CHI
+                        exists = CHI
+			war_with = JAP
+			not = { has_country_flag = The_Migration_Period·WuHan  } 
+			date = 1937.9.1
+			not = { year = 1938 } 
+		}
+		allow = {
+			CHI = { controls = 5494 
+                                controls = 7435 
+                                controls = 7520 
+                                controls = 7508 }
+		}
+		effect = {                      
+			set_country_flag =  The_Migration_Period·WuHan 
+			country_event = 1550
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#工业内迁·第二阶段1938——1940
+   Migration_Period2_chi = {               
+		potential = {
+			tag = CHI
+			CHI = { war_with = JAP }
+                        has_country_flag = The_Migration_Period·WuHan
+			not = { has_country_flag = The_Migration_Period·ChongQing } 
+			date = 1938.7.20
+			not = { year = 1939 } 
+		}
+		allow = {
+			 exists = CHI
+                         CHI = { controls = 7520 
+                                 controls = 7508 
+                                 controls = 9478 
+                                 controls = 7435 }
+                         CYN = { controls = 7561 }
+		}
+		effect = {
+			set_country_flag = The_Migration_Period·ChongQing
+			country_event = 1551 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+           #教育内迁(1937——1938)
+	   education_chi = {               
+		potential = {
+			tag = CHI
+			CHI = { war_with = JAP }
+                        has_country_flag = The_Migration_Period·WuHan
+			not = { has_country_flag = The_Migration_Period·education } 
+			date = 1937.11.20
+			not = { year = 1938 } 
+			ai = no
+		}
+		allow = {
+			 exists = CHI
+                         CHI = { controls = chekiang_region 
+                                 controls = hunan_region }
+		}
+		effect = {                        
+			set_country_flag = The_Migration_Period·education
+			country_event = 1553
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+           #西南联大
+	   education2_chi = {               
+		potential = {
+			tag = CHI
+			CHI = { war_with = JAP }
+                        has_country_flag = The_Migration_Period·education
+			not = { has_country_flag = The_Migration_Period·education2 } 
+			date = 1938.2.1
+			not = { year = 1939 } 
+			ai = no
+		}
+		allow = {
+			 exists = CHI
+                         CHI = { controls = hunan_region }
+		}
+		effect = {
+			set_country_flag = The_Migration_Period·education2
+			country_event = 1557
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}

@@ -1,0 +1,25 @@
+#抗战建国纲领
+country_event = {
+	id = 15000
+	fire_only_once = yes
+	trigger = {
+		tag = CHI
+		war_with = JAP
+		and = {
+			year = 1938
+			month = 6    #七月
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	title = "EVENT_15000_TITLE"
+	desc = "EVENT_15000_DESC"
+	option = {
+		name = "EVENT_15000_OPTION"
+		add_country_modifier = {
+			name = "EVENT_15000_MODIFIER"
+			duration = 730
+		}
+	}
+}

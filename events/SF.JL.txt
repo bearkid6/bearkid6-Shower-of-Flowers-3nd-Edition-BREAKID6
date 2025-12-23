@@ -1,0 +1,181 @@
+######################
+#   国际公告事件组   #
+######################
+country_event = {
+        major = yes
+	id = 80010
+	title = "21title"
+	desc = "21decs"
+	picture = "Event3000083"
+	trigger = {		
+                tag = USA
+		date = 1943.11.22
+                exists = CHI
+                not = { has_global_flag = Event80 }
+                has_global_flag = JAPsouthing
+                CHI = { controls = 9478 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "4option1"
+                create_alliance = USA
+                create_alliance = ENG
+		set_global_flag = Event80
+                JAP = { country_event = 80011 }
+                CHI = { country_event = 80012 }
+		ai_chance = { factor = 100 }
+       	}
+}
+country_event = {
+	id = 80011
+       	is_triggered_only = yes
+	title = "801title"
+	desc = "801decs"
+	picture = "Event1100101"
+	option = {
+		name = "八嘎"	
+                dissent = 10
+		relation = { who = USA value = -100 }
+	}
+}
+country_event = {
+	id = 80012
+       	is_triggered_only = yes
+	title = "21title"
+	desc = "21decs"
+	picture = "Event1100101"
+	option = {
+		name = "不惜一切代价让中国打下去"
+                national_unity = 20
+                dissent = -10	
+		relation = { who = USA value = -100 }
+	}
+}
+country_event = {
+        major = yes
+	id = 80013
+	title = "31title"
+	desc = "31decs"
+	picture = "Event3000083"
+	trigger = {		
+                tag = USA
+                exists = CHI
+                exists = SOV
+		not = { exists = GER }
+                not = { has_global_flag = Event80 }
+                has_global_flag = JAPsouthing
+                CHI = { controls = 9478 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "4option1"
+                create_alliance = USA
+                create_alliance = ENG
+		set_global_flag = Event80
+                JAP = { country_event = 80014 }
+                CHI = { country_event = 80015 }
+		ai_chance = { factor = 100 }
+       	}
+}
+country_event = {
+	id = 80015
+       	is_triggered_only = yes
+	title = "波兹坦公告发布"
+	desc = "31decs"
+	picture = "Event1100101"
+	option = {
+		name = "坚持抗战到底，胜利就在眼前！"
+                national_unity = 20
+                dissent = -10	
+		relation = { who = USA value = 100 }
+	}
+}
+country_event = {
+	id = 80014
+       	is_triggered_only = yes
+	title = "美中英三国敦促帝国投降"
+	desc = "31decs"
+	picture = "Event1100101"
+	option = {
+		name = "帝国万岁，誓死不降"
+                national_unity = 20
+                dissent = 30	
+		relation = { who = USA value = -100 }
+                ai_chance = { factor = 100 }
+	}
+        option = {
+		name = "不可能了，投降吧"
+                national_unity = -100
+                dissent = 30	
+		relation = { who = USA value = -100 }
+                ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 80016
+	major = yes
+	title = "Event44444title"
+	desc = "Event44444desc"
+	picture = "Event1100101"
+	trigger = {
+		or = {
+			tag = SOV
+                	tag = CHI
+		}
+		not = { has_country_flag = Even1 }
+                has_global_flag = JAPsouthing 
+		CHI = { war_with = JAP }
+                exists = CHI
+		date = 1941.4.13
+	}
+	option = {
+		name = "签署"
+		set_country_flag = Even1
+                non_aggression_pact = JAP
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+        major = yes
+	id = 80017
+	title = "对日宣战"
+	desc = "61decs"
+	picture = "Event3000083"
+	trigger = {		
+                tag = SOV
+                exists = CHI
+		not = { exists = GER }
+                not = { has_global_flag = Even81 }
+                has_global_flag = Event80
+                CHI = { controls = 9478 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "消灭日本法西斯"
+                SOV = { war = { target = JAP } }
+                create_alliance = USA
+                create_alliance = ENG
+                create_alliance = CHI
+		set_country_flag = Even81
+                JAP = { country_event = 80018 }
+		ai_chance = { factor = 100 }
+       	}
+}
+country_event = {
+	id = 800018
+       	is_triggered_only = yes
+	title = "苏联对帝国宣战"
+	desc = "61decs"
+	picture = "Event1100101"
+	option = {
+		name = "将大东亚战争进行到底"
+                national_unity = 20
+                dissent = 30	
+	}
+}

@@ -1,0 +1,170 @@
+####################
+#   大迁徙事件组   #
+####################
+#工业内迁第一阶段
+country_event = {
+        is_triggered_only = yes
+	id = 1550
+	title = "开展第一阶段的工业内迁"
+	desc = "Migration Period1_desc"
+	picture = "CHI_event_10000041"
+	option = {
+		name = "中国还是有希望的！"
+                add_country_modifier = {
+			name = "The_Migration_Period_modifier"
+			duration = 365
+                }		
+                5542 = { industry = -2 }
+                5494 = { industry = -2 }
+                5383 = { industry = -1 }
+                5275 = { industry = -1 }
+                7508 = { industry = 3 }
+                7520 = { industry = 2 }
+                7435 = { industry = 1 }
+                CHI = { 5542 = { energy = -2 } } 
+                CHI = { 5542 = { metal  = -1 } }
+                CHI = { 5494 = { energy = -1 } } 
+                CHI = { 5494 = { metal  = -8 } }
+                CHI = { 5383 = { energy = -1 } } 
+                CHI = { 5383 = { metal  = -1 } }
+                CHI = { 7508 = { energy = 2 } } 
+                CHI = { 7508 = { metal  = 1 } }
+                CHI = { 7520 = { energy = 9 } } 
+                CHI = { 7520 = { metal  = 9 } }		
+	}
+}
+#工业内迁第二阶段
+country_event = {
+        is_triggered_only = yes
+	id = 1551
+	title = "开展第二阶段的工业内迁"
+	desc = "Migration Period2_desc"
+	picture = "CHI_event_10000041"
+	option = {
+		name = "中国还是有希望的！"
+                country_event = 1552		
+                5728 = { industry = -1 }
+                5843 = { industry = -1 }
+                5515 = { industry = -1 }              
+                7508 = { industry = -2 }      
+                CHI = { 5728 = { energy = -1 } } 
+                CHI = { 5515 = { metal  = -1 } }
+                CHI = { 5515 = { energy = -2 } } 
+                CHI = { 5728 = { metal  = -1 } }
+                CHI = { 5383 = { energy = -1 } } 
+                CHI = { 5383 = { metal  = -1 } }
+                CHI = { 7508 = { energy = -2 } } 
+                CHI = { 7508 = { metal  = -1 } }           			           	
+	}
+}
+#工业内迁第二阶段*建设工业区
+country_event = {
+        is_triggered_only = yes
+	id = 1552
+	title = "建设工业区"
+	desc = "Migration Period3_desc"
+	picture = "CHI_event"
+	option = {
+		name = "中国还是有希望的！"
+                country_event = 1552		
+                7519 = { industry = 1 }              
+                7530 = { industry = 1 }
+                9415 = { industry = 1 }
+                9416 = { industry = 1 }
+                9479 = { industry = 3 }
+                9170 = { industry = 2 }
+                7561 = { industry = 2 }
+                7520 = { industry = 2 }
+                7553 = { industry = 2 }
+                7563 = { industry = 2 }
+                CHI = { 9478 = { energy = 10 } } 
+                CHI = { 9478 = { metal  = 5 } }
+                CHI = { 9415 = { energy = 3 } } 
+                CHI = { 9415 = { metal  = 2 } }
+                CHI = { 7561 = { energy = 2 } } 
+                CHI = { 7561 = { metal  = 1 } }
+                CHI = { 9170 = { energy = 2 } } 
+                CHI = { 9170 = { metal  = 1 } }
+                CHI = { 7520 = { energy = 3 } } 
+                CHI = { 7520 = { metal  = 1 } }
+                CHI = { 7553 = { energy = 1 } } 
+                CHI = { 7553 = { metal  = 1 } }	
+                CHI = { 7563 = { energy = 1 } } 
+                CHI = { 7563 = { metal  = 1 } }					           	
+	}
+}
+#教育内迁 江浙
+country_event = {
+        is_triggered_only = yes
+	id = 1553
+	title = "转移中央大学、复旦大学、交通大学及浙大"
+	desc = "Migration Period4_desc"
+	picture = "CHI_event_1"
+	option = {
+		name = "为了民族！"
+                add_country_modifier = {
+			name = "The_Migration_Period·education_modifier"
+			duration = 120
+                }
+                country_event = 1554		
+                5542 = { leadership = -0.3 }              
+                5494 = { leadership = -0.3 }
+                9478 = { leadership = 1 }                     			           	
+	}
+}
+#教育内迁 平津
+country_event = {
+        is_triggered_only = yes
+	id = 1554
+	title = "转移国立清华大学、国立北京大学以及私立南开大学"
+	desc = "Migration Period5_desc"
+	picture = "CHI_event_1"
+	option = {
+		name = "救亡图存"
+                country_event = 1556		
+                9479 = { leadership = -1.2 }              
+                7520 = { leadership = 0.7 }
+                7435 = { leadership = 0.5 }                     			           	
+	}
+}
+#西北联大
+country_event = {
+        is_triggered_only = yes
+	id = 1555
+	title = "成立国立西北联合大学"
+	desc = "Migration Period6_desc"
+	picture = "CHI_event_1"
+	option = {
+		name = "为了民族！"	                         
+                7435 = { leadership = 0.5 }                     			           	
+	}
+}
+#长沙临时大学
+country_event = {
+        is_triggered_only = yes
+	id = 1556
+	title = "成立长沙临时大学"
+	desc = "Migration Period7_desc"
+	picture = "CHI_event_1"
+	option = {
+		name = "为了民族！"	                         
+                7520 = { leadership = 0.5 }                     			           	
+	}
+}
+#西南联大
+country_event = {
+        is_triggered_only = yes
+	id = 1557
+	title = "成立国立西南联合大学"
+	desc = "Migration Period8_desc"
+	picture = "CHI_event_1"
+	option = {
+		name = "中国万岁！"
+                add_country_modifier = {
+			name = "The_Migration_education2·education_modifier"
+			duration = 2923
+                }	                         
+                7520 = { leadership = -0.5 }
+                7561 = { leadership = 1 }                     			           			           	
+	}
+}

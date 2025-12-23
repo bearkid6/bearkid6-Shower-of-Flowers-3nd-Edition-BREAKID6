@@ -1,0 +1,70 @@
+name = "SCENARIO_BATTLE_OF_MIDWAY_NAME"
+desc = "SCENARIO_BATTLE_OF_MIDWAY_DESC"
+icon = "GFX_select_downfall"
+startdate = 1942.6.3
+enddate = 1942.9.6
+
+camera_height = 240
+camera_center = { x = 106 y = 1258 }
+
+victory_conditions = "scenarios/Battle_of_Midway/faction_aims.txt"
+victory_conditions_to_win = 1
+number_of_victory_conditions = 1
+
+
+
+reinforcement = 30
+
+# will load any history files with scenarios/Battle_of_Midway/<tag>.txt
+selectable_country = USA
+selectable_country = JAP
+events = "scenarios/Battle_of_Midway/events.txt"
+
+
+
+# visible provinces & regions
+provinces = {
+5315
+10669
+10664
+10684
+5825
+14165
+# water
+10995
+13609
+11656
+13605
+14113
+13608
+13623
+13611
+13612
+13613
+10994
+13608
+11805
+10995
+10589
+13561
+11609
+11614
+11612
+11615
+11613
+11164
+11620 
+11619
+11622
+11621 
+11623
+11645
+11663
+11647
+11662
+11652
+14081
+11655
+11653
+11657
+}

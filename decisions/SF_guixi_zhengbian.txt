@@ -1,0 +1,47 @@
+######################
+#   军阀整编议决组   #
+######################
+#桂军整编
+diplomatic_decisions = 	{
+            ZHENGBJ_CGX1 = {  
+		potential = {
+			tag = CGX
+                        exists = CGX
+                        exists = CHI
+			war_with = JAP
+			not = { has_country_flag = GUIXIZB }			
+		}
+		allow = {		
+			date = 1937.10.15
+			not = { year = 1938 } 
+		}
+		effect = {
+			set_country_flag = GUIXIZB
+			country_event = 300000
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+          #桂军整编
+          ZHENGBJUN_CGX2 = {  
+		potential = {
+			tag = CGX
+                        exists = CGX
+                        exists = CHI
+			war_with = JAP
+                        has_country_flag = GUIXIZB
+			not = { has_country_flag = GUIXIZB2 }
+		}
+		allow = {		
+			date = 1939.10.2
+			not = { year = 1940 } 
+		}
+		effect = {
+			set_country_flag = GUIXIZB2
+			country_event = 300001
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}

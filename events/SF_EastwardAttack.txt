@@ -1,0 +1,62 @@
+######################
+#   东征战役事件组   #
+######################
+country_event = {
+	id = 1000077
+	is_triggered_only = yes
+	title = "Event1000077title"
+	desc = "Event1000077desc"
+	picture = "Event1000077"
+	option = {
+		name = "Event1000077option"
+		CHC = {	
+			war = {
+				target = CSX
+			}
+		}
+		CSX = {	country_event = 1000078 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000078
+	is_triggered_only = yes
+	title = "Event1000078title"
+	desc = "Event1000078desc"
+	picture = "Event1000077"
+	option = {
+		name = "Event1000078option"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000079
+	is_triggered_only = yes
+	title = "Event1000079title"
+	desc = "Event1000079desc"
+	picture = "Event1000079"
+	option = {
+		name = "Event1000079option"
+		ai_chance = { factor = 100 }
+		CHC = {	end_war = CSX }
+		CSX = {	leave_alliance = CHI country_event = 1000080 }
+		CSX = { any_owned = { limit = { province_id = 7391 } secede_province = CHC }}
+		manpower = 60
+		kill_leader = 76325
+		remove_minister = 51023
+		head_of_government = 51037
+	}
+}
+country_event = {
+	id = 1000080
+	is_triggered_only = yes
+	title = "Event1000080title"
+	desc = "Event1000080desc"
+	picture = "Event1000079"
+	option = {
+		name = "Event1000080option"
+		ai_chance = { factor = 100 }
+		military_access = CHI
+		CHI = { military_access = CSX }
+	}
+}

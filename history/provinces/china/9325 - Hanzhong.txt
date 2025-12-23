@@ -1,0 +1,9 @@
+owner = CDB
+controller = CDB
+add_core = CHC
+add_core = CHI
+add_core = CDB
+infra = 3
+1937.1.2 = {
+	owner = CHI
+}

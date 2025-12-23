@@ -1,0 +1,25 @@
+######################
+#   重庆谈判决议组   #
+######################
+diplomatic_decisions = {
+	Chongqing_negotiations = {
+		major = yes
+		potential = {
+			tag = CHI
+			exists = CHC
+			alliance_with = CHC
+			or = {
+				not = { exists = JAP }
+				JAP = { is_subject = yes }
+			}
+			not = { has_global_flag = Chongqing_negotiations }
+		}
+		effect = {
+			set_global_flag = Chongqing_negotiations
+			country_event = 1000310
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
